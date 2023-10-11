@@ -55,9 +55,11 @@
 
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
+            text-align: center;
+            grid: 20px / 50px 50px 75px 200px;
+            column-gap: 20px;
             list-style: none;
-            padding: 10px;
-            display: flex;
+            display: grid;
         }
 
 /*Schrift der Kategorien und der abstand dazwischen*/
@@ -89,10 +91,10 @@
             z-index: 1;
         }
         .navbar-dropdown-content-block {
-            padding-top: 20px;
-            padding-bottom: 20pxS;
+            padding-left: 40px;
+            padding: 30px;
             display: grid;
-            grid:auto/ auto auto auto auto;
+            grid:auto/ 25% 25% 25% 25%;
             align-items: center;
             gap: 10px;
             height:fit-content;
@@ -100,11 +102,10 @@
             box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
         }
         .navbar-dropdown-content-block b{
-
+            height: 25px;
             text-align: left;
             color: #8b735b;
             font-weight: normal;
-            margin-inline: 100px;
         }
 
         .navbar-dropdpwn-content a {
