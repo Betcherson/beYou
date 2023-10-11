@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'MarckScript-Regular';
+    src: url('fonts/MarckScript-Regular.eot');
+    src: url('fonts/MarckScript-Regular.eot?#iefix')
+    format('embedded-opentype'),
+        url('fonts/MarckScript-Regular.woff2') format('woff2'),
+        url('fonts/MarckScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Material Icons';
+    src: url('fonts/MaterialIcons-Regular.eot');
+    src: url('fonts/MaterialIcons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MaterialIcons-Regular.woff2') format('woff2'),
+        url('fonts/MaterialIcons-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*Hintergrund des Headers*/
+        header {
+            background-color: rgba(251, 250, 246, 0.9);
+            /*background-color: #dbe7ea; /* Weiche Blautöne für Header */
+            padding: 15px;
+            text-align: left;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            max-height: 8vw
+        }
+
+/* container der das logo enthält*/
+        .containerlogo {
+            text-align:left;
+            margin: 0;
+            z-index: 99;
+        }
+
+
+/*der Container enthält die Kategorien so wie die Suchleiste und die icons*/
+        .header-text-container {
+            display: flex;
+            align-items: center;
+            margin-right: 0px; /* Verringere den Abstand zwischen Suchleiste und Icons */
+        }
+
+/*Die Navbar enthählt die Kategorien*/
+        .navbar {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+        }
+
+/*Schrift der Kategorien und der abstand dazwischen*/
+
+        .navbar-dropdown{
+            justify-content: center;
+            list-style: none;
+            text-decoration: none;
+            margin-right: 20px;
+            color: #8b735b; /* Bräunliche Schriftfarbe für Menü */
+        }
+
+        .navbar-dropdown a {
+            text-decoration: none;
+            margin-right: 20px;
+            color: inherit;
+            text-shadow: inherit;
+        }
+
+        .navbar-dropdown-content {
+            width: 100%;
+            text-align:center;
+            padding-top: 30px;
+            display: none;
+            background-color: rgba(251, 250, 246, 0);
+            left: 0;
+            position:absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .navbar-dropdown-content-block {
+            height: 100px;
+            background-color: rgba(251, 250, 246, 1);
+            box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
+        }
+        .navbar-dropdown-content-block b{
+            color: #8b735b;
+            font-weight: normal;
+            margin-inline: 100px;
+        }
+
+        .navbar-dropdpwn-content a {
+            position: fixed;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar-dropdown:hover{
+                color: #6f5c48;
+                text-shadow: #050404;
+                font-weight: bolder;
+            }
+        .navbar-dropdown:hover .navbar-dropdown-content {display: block;}
+        .navbar-dropdown-content-block b:hover{
+            color: #6f5c48;
+            text-shadow: #050404;
+            font-weight: bold;
+        }
+
+
+/*Schrift beim hovern*/
+
+
+/*Setzt die suchleiste zusammen, mit transparentem hintergrund*/
+        .search-bar {
+            background-color: rgba(255, 255, 255, 0); /* Hintergrundfarbe für Suchleiste */
+            display: flex;
+            align-items: center;
+        }
+
+/*Eingabefeld der Suchleiste*/
+        .search-bar input[type="text"] {
+            width: 150px;
+            background-color: #f5f3ea;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            -webkit-text-fill-color:  #8b735b ;
+        }
+
+/*Suchbutton der Suchleiste*/
+        .search-bar input[type="submit"] {
+            background-color: #90b3be;
+            /*background-color: #5f9de4d0; /* Sanfter Blauton für Suchknopf */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer; /* Mauszeiger ändert sich beim Überfahren */
+        }
+
+/*Suchbutton beim hovern*/
+        .search-bar input[type="submit"]:hover {
+        background-color: #79939b;
+        /*background-color: #5f9de4; /* Ändert die Hintergrundfarbe bei Mouseover */
+        }
+
+/*enthält die icons*/
+        .icons {
+            display: flex;
+            align-items: center;
+            margin: 10px; /* Füge mehr Abstand zwischen den Icons hinzu */
+        }
+
+/*größe und farbe der icons*/
+        .icons i {
+            font-size: 30px;
+            margin-right: 10px; /* Mehr Abstand zwischen den Icons */
+            color: #8b735b; /* Bräunliche Schriftfarbe für Icons */
+            cursor: pointer; /* Mauszeiger ändert sich beim Überfahren */
+        }
+
+/*icons beim hovern*/
+        .icons i:hover{
+            color: #6f5c48;
+        }
+
+/*hintergrund der Seite*/
+        body {
+            background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h1 {
+            color: #4a4a4a; /* Dunkelgrauer Text */
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            font-size:medium;
+        }
+
+
+
+
+
+
+
+
+
+        .container {
+            max-width: 100%; /* Container auf 95% der Seitenbreite vergrößern */
+            margin-top: calc(10vw*0.8);
+            padding-top: 0px;
+        }
+
+        .container h2 {
+            color: #8b735b; /* Bräunliche Schriftfarbe für Überschriften im Container */
+            text-align: center; /* Überschriften zentrieren */
+        }
+
+        .container h4{
+            color: #050404; /* Bräunliche Schriftfarbe für Überschriften im Container */
+            text-align: center; /* Überschrift zentrieren */
+            vertical-align: middle;
+        }
+
+        .image-container {
+            display: flex;
+            position: relative;
+            width: 100%;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+
+        .splitscreen {
+            display:flex;
+            position: relative;
+            width: 100%;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+        .image-container {
+            width: 100%;
+            flex:1;
+            overflow: hidden;
+        }
+
+        .image-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Stil für das Overlay-Div */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            border: transparent;
+        }
+        .overlay input[type= "feld"]{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4); /* Milchig weiße Farbe mit Transparenz */
+            border-color: transparent;
+        }
+        .overlay input[type= "feld"]:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Milchig weiße Farbe mit Transparenz */
+            border-color: rgba(255, 255, 255, 0); /* Milchig weiße Farbe mit Transparenz */
+        }
+
+        .containerbest{
+            max-width: 90%; /* Container auf 95% der Seitenbreite vergrößern */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .containerbest .bestsellers {
+            margin-top: 40px;
+        }
+
+        .containerbest .bestsellers h3 {
+            color: #4a4a4a; /* Dunkelgrauer Text */
+            font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
+            text-align: center; /* Überschrift zentrieren */
+        }
+
+        .containerbest .bestsellers .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .containerbest .bestsellers .item {
+            width: 19%;
+            padding-bottom: 25%;
+            background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #6f5c48; /* Hintergrundfarbe für die Fußzeile */
+            padding: 10px 0;
+            text-align: center;
+            color: #f5f3ea; /* Textfarbe für die Fußzeile */
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .cookie-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 70%; /* Anpassen der Breite */
+            max-width: 400px; /* Maximalbreite des Pop-ups */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Schatten hinzufügen */
+            z-index: 9999; /* Stellen Sie sicher, dass das Pop-up auf der vordersten Ebene liegt */
+
+        }
+
+        .cookie-popup button {
+            background-color: #f5f3ea;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Abstand zum Text hinzufügen */
+        }
+        .cookie-popup button:hover{
+            background-color: #b1ab9e;
+            color: #f5f3ea;
+        }
+
+h5{
+    color: #4a4a4a; /* Dunkelgrauer Text */
+    margin: 0;
+    padding: 0;
+    font-family: MarckScript-Regular;
+    font-size: 90%;
+    font-weight: lighter;
+}
+
+

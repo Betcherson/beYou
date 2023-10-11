@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beYou - promise to protect</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="iconfont\material-icons.css" />
+</head>
+<body>
+    <div class="cookie-popup" id="cookiePopup">
+        Diese Website verwendet Cookies. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.
+        <button onclick="acceptCookies()">Akzeptieren</button>
+    </div>
+
+    <script>
+        // Funktion zum Ausblenden des Cookie-Hinweis-Pop-ups und Speichern des Cookie-Zustands
+        function acceptCookies() {
+            document.getElementById("cookiePopup").style.display = "none";
+            // Hier könnten Sie Code zum Speichern des Cookie-Zustands hinzufügen
+        }
+
+        // Prüfen, ob der Cookie-Hinweis bereits akzeptiert wurde (hier vereinfacht)
+        // Sie sollten hier den tatsächlichen Cookie-Status überprüfen
+        if (!document.cookie.includes("acceptedCookies=true")) {
+            document.getElementById("cookiePopup").style.display = "block";
+        }
+    </script>
+
+    <header>
+
+            <img src="b-v/40918284zentriert2.png" width="10%" >
+        
+        <div class="header-text-container">
+
+            <div class="navbar">
+                <div class="navbar-dropdown">
+                <a href="#">Damen
+                <div class="navbar-dropdown-content">
+                    <div class="navbar-dropdown-content-block">
+                    <b href="#">Link 1</b>
+                    <b href="#">Link 2</b>
+                    <b href="#">Link 3</b>
+                </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="navbar-dropdown">
+                <a href="#">Herren
+                <div class="navbar-dropdown-content">
+                    <div class="navbar-dropdown-content-block">
+                    <b href="#">Link 1</b>
+                    <b href="#">Link 2</b>
+                    <b href="#">Link 3</b>
+                </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="navbar-dropdown">
+                <a href="#">Neuigkeiten
+                <div class="navbar-dropdown-content">
+                    <div class="navbar-dropdown-content-block">
+                    <b href="#">Link 1</b>
+                    <b href="#">Link 2</b>
+                    <b href="#">Link 3</b>
+                </div>
+                </div>
+                </a>
+            </div>
+            <div class="navbar-dropdown">
+                <a href="#">Unsere Philosophie
+                <div class="navbar-dropdown-content">
+                    <div class="navbar-dropdown-content-block">
+                    <b href="#">Link 1</b>
+                    <b href="#">Link 2</b>
+                    <b href="#">Link 3</b>
+                </div>
+                </div>
+                </a>
+            </div>
+            </div>
+
+            <div class="search-bar">
+                    <input type="text" placeholder="Suche">
+                    <input type="submit" value="Suchen">
+            </div>
+
+            <div class="icons">
+                    <i class="material-icons">
+                        person
+                    </i>
+                    <i class="material-icons">
+                        shopping_basket
+                    </i>
+                    <i class="material-icons">
+                        favorite
+                    </i>
+            </div>
+
+        </div>
+
+    </header>
+        
+    </div>
+
+    <div class="container">
+        <h2>Willkommen bei beYou - Ihrem nachhaltigen Kleidungsmarktplatz</h2>
+        <div class="splitscreen">
+            <div class="image-container">
+                <div class="overlay">
+                    <input type="feld">
+                </div>
+                <video autoplay muted loop>
+                    <source src="b-v/schneider.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="image-container">
+                <div class="overlay"></div>
+                <div class="overlay">
+                    <input type="feld">
+                </div>
+                <video autoplay muted loop>
+                    <source src="b-v/output.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerbest">
+        <div class="bestsellers">
+            <h3>Bestseller</h3>
+            <div class="row">
+                <div class="item">Produkt 1</div>
+                <div class="item">Produkt 2</div>
+                <div class="item">Produkt 3</div>
+                <div class="item">Produkt 4</div>
+                <div class="item">Produkt 5</div>
+            </div>
+            <div class="row">
+                <div class="item">Produkt 6</div>
+                <div class="item">Produkt 7</div>
+                <div class="item">Produkt 8</div>
+                <div class="item">Produkt 9</div>
+                <div class="item">Produkt 10</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>
