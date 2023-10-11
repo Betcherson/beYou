@@ -89,11 +89,19 @@
             z-index: 1;
         }
         .navbar-dropdown-content-block {
-            height: 100px;
+            padding-top: 20px;
+            padding-bottom: 20pxS;
+            display: grid;
+            grid:auto/ auto auto auto auto;
+            align-items: center;
+            gap: 10px;
+            height:fit-content;
             background-color: rgba(251, 250, 246, 1);
             box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
         }
         .navbar-dropdown-content-block b{
+
+            text-align: left;
             color: #8b735b;
             font-weight: normal;
             margin-inline: 100px;
@@ -273,9 +281,17 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .containerbest h3 {
+            color: #4a4a4a; /* Dunkelgrauer Text */
+            font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
+            text-align: center; /* Überschrift zentrieren */
+        }
 
         .containerbest .bestsellers {
             margin-top: 40px;
+            display: grid;
+            grid: auto / auto auto auto auto auto;
+            gap: 10px;
         }
 
         .containerbest .bestsellers h3 {
@@ -284,17 +300,11 @@
             text-align: center; /* Überschrift zentrieren */
         }
 
-        .containerbest .bestsellers .row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
 
         .containerbest .bestsellers .item {
-            width: 19%;
+            height: calc(3vw *6);
             padding-bottom: 25%;
             background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
-            display: flexbox;
             justify-content: center;
             align-items: center;
             text-align: center;
