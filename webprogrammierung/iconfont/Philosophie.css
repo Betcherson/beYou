@@ -1,0 +1,32 @@
+/* Stil für das Video */
+.video-container {
+    display: flex;
+    justify-content: center; /* Zentrierung horizontal */
+    align-items: center; /* Zentrierung vertikal */
+    width: 100%;
+    transition: width 0.5s; /* Animierter Übergang */
+}
+
+/* Stil für das Video beim Hover */
+.video-container:hover {
+    width: 120%; /* Größere Breite beim Hover */
+}
+
+/* Layout für die gesamte Seite */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Stil für den Textblock */
+.text-block {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Stil für die Tabelle */
+.table-container {
+    flex: 1;
+    padding: 20px;
+    overflow: auto; /* Falls die Tabelle zu groß wird, kann man scrollen */
+}
