@@ -232,7 +232,7 @@
         .image-container {
             display: flex;
             position: relative;
-            width: 100%;
+            width: 100vw;
             max-height: 100vh;
             overflow: hidden;
         }
@@ -252,7 +252,6 @@
 
         .image-container video {
             width: 100%;
-            height: 100%;
             object-fit: cover;
         }
 
@@ -264,15 +263,36 @@
             width: 100%;
             height: 100%;
             z-index: 5;
-            border: transparent;
+            border-width: 0;
         }
-        .overlay input[type= "feld"]{
+        .overlay h1{
+            text-align: center;
+            font-size: 900;
+            color:   #8b735b; /* Bräunliche Schriftfarbe für Überschriften im Container */
+            text-align: center; /* Überschrift zentrieren */
+            vertical-align: middle;
+        }
+        .overlay .fest{
+            align-content: center;
+            padding: 60px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background-color: #f5f3ea89; /* Milchig weiße Farbe mit Transparenz */
+            border-width: 0;
+        }
+        .overlay .maus{
+            padding: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: left;
             width: 100%;
             height: 100%;
             background-color: rgba(255, 255, 255, 0.4); /* Milchig weiße Farbe mit Transparenz */
-            border-color: transparent;
+            border-width: 0;
         }
-        .overlay input[type= "feld"]:hover {
+        .overlay .maus:hover {
             background-color: rgba(255, 255, 255, 0.1); /* Milchig weiße Farbe mit Transparenz */
             border-color: rgba(255, 255, 255, 0); /* Milchig weiße Farbe mit Transparenz */
         }
