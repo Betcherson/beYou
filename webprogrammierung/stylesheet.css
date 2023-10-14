@@ -64,8 +64,8 @@
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
             text-align: center;
-            grid: 20px / 50px 50px 75px 200px;
-            column-gap: 20px;
+            grid: 20px / 70px 70px 105px 178px;
+            column-gap: 10px;
             list-style: none;
             display: grid;
         }
@@ -198,10 +198,6 @@
         .icons a{
             font-size: 0px;
         }
-/*icons mit link aber ohne Unterstrich*/
-        .no-underline {
-             text-decoration: none;
-         }
 /*hintergrund der Seite*/
         body {
             background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
@@ -248,6 +244,7 @@ padding-top: 10px;
 
         .image-container {
             display:flex;
+            flex:  1;
             position: relative;
             width: 100vw;
             max-height: 100vh;
@@ -261,11 +258,7 @@ padding-top: 10px;
             max-height: 100vh;
             overflow: hidden;
         }
-        .image-container {
-            width: 100%;
-            flex:1;
-            overflow: hidden;
-        }
+
 
         .image-container video {
             width: 100%;
@@ -290,14 +283,15 @@ padding-top: 10px;
             vertical-align: middle;
         }
         .overlay .fest{
-            align-content: center;
-            padding: 60px;
+            align-content: left;
+            padding-top: 60px;
             text-align: center;
             width: 100%;
             height: 100%;
             background-color: #f5f3ea89; /* Milchig weiße Farbe mit Transparenz */
             border-width: 0;
         }
+
         .overlay .maus{
             padding: 60px;
             position: absolute;
