@@ -83,7 +83,7 @@
         .navbar-dropdown a {
             text-decoration: none;
             margin-right: 20px;
-            color: inherit;
+            color: #8b735b;
             text-shadow: inherit;
         }
 
@@ -181,19 +181,6 @@
             margin: 10px; /* Füge mehr Abstand zwischen den Icons hinzu */
         }
 
-        .icons .material-icons {
-            font-family: "Material Icons";
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-
-        }
-        .icons .material-icons i {
-            font-size: 30px;
-            margin-right: 10px; /* Mehr Abstand zwischen den Icons */
-            color: #8b735b; /* Bräunliche Schriftfarbe für Icons */
-            cursor: pointer; /* Mauszeiger ändert sich beim Überfahren */
-        }
 
 /*größe und farbe der icons*/
         .icons i {
@@ -201,11 +188,15 @@
             margin-right: 10px; /* Mehr Abstand zwischen den Icons */
             color: #8b735b; /* Bräunliche Schriftfarbe für Icons */
             cursor: pointer; /* Mauszeiger ändert sich beim Überfahren */
+            text-decoration: none;
         }
 
 /*icons beim hovern*/
         .icons i:hover{
             color: #6f5c48;
+        }
+        .icons a{
+            font-size: 0px;
         }
 /*icons mit link aber ohne Unterstrich*/
         .no-underline {

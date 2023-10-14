@@ -30,6 +30,12 @@
   margin-right: 20px; /* Mehr Abstand zwischen den Icons */
   color: #8b735b;
 }
+.material-icons a{
+  font-size: 40px;
+  margin-right: 20px; /* Mehr Abstand zwischen den Icons */
+  color: #8b735b;
+  text-decoration: none;
+}
 
 @font-face {
   font-family: "Material Icons Outlined";
