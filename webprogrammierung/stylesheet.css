@@ -198,6 +198,69 @@
         .icons a{
             font-size: 0px;
         }
+
+        .icons-dropdown-content {
+            width: 300px;
+            text-align:center;
+            padding-top: 30px;
+            display: none;
+            background-color: rgba(251, 250, 246, 0);
+            left: calc(100vw - 300px);
+            min-width: 160px;
+            z-index: 1;
+            position:fixed;
+            top: 70px;
+        }
+        .icons-dropdown-content-block {
+            padding: 10px;
+            display: grid;
+            grid-template-columns:100px 200px;
+            align-items: left;
+            gap: 10px;
+            height: fit-content;
+            background-color: rgba(251, 250, 246, 1);
+            box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
+        }
+        .icons-dropdown-content-block b{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 25px;
+            text-align: left;
+            color: #8b735b;
+            font-weight: normal;
+            }
+
+        .icons-dropdown-content a {
+            text-align: left;
+            position: fixed;
+            top: 0;
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .icons-dropdown-content-block .item {
+            width: 100px;
+            height: 120px;
+            padding-bottom: 25%;
+            background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+        }
+        .icons-dropdown:hover{
+                color: #6f5c48;
+                text-shadow: #050404;
+                font-weight: bolder;
+            }
+        .icons-dropdown:hover .icons-dropdown-content {display: block;}
+        .icons-dropdown-content-block b:hover{
+            color: #6f5c48;
+            text-shadow: #050404;
+            font-weight: bold;
+        }
+
 /*hintergrund der Seite*/
         body {
             background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
