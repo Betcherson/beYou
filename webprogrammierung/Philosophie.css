@@ -1,0 +1,19 @@
+body{
+    background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+.table-container{
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid: auto/ 50% 50%;
+    padding: 20px;
+}
+
+.table-container table{
+    width: 100%;
+    border-collapse: collapse;
+}
+

@@ -64,7 +64,7 @@
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
             text-align: center;
-            grid: 20px / 70px 70px 105px 178px;
+            grid: 20px / 70px 70px 105px 180px;
             column-gap: 10px;
             list-style: none;
             display: grid;
@@ -277,7 +277,7 @@
         }
         h2{
             font-size:medium;
-padding-top: 10px;
+            padding-top: 10px;
         }
 
 
@@ -456,15 +456,6 @@ h5{
     font-size: 90%;
     font-weight: lighter;
 }
-.table-container{
-    min-height: 300px;
-    width: 100%;
-    display: grid;
-    grid: auto/ 50% 50%;
-    padding: 10px;
-}
-.table-container table{
-    width: 100%;
-    border-collapse: collapse;
-}
+
+
 
