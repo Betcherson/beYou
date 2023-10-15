@@ -25,8 +25,8 @@
     font-weight: 400;
     font-display: block;
     src: url("./material-icons.woff2") format("woff2"), url("./material-icons.woff") format("woff");
-  }
- 
+    }
+
 
 
 /*Hintergrund des Headers*/
@@ -63,8 +63,8 @@
 
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
-            text-align: center;
-            grid: 20px / 70px 70px 105px 178px;
+            text-align: left;
+            grid: 20px / 70px 70px 105px 190px;
             column-gap: 10px;
             list-style: none;
             display: grid;
@@ -73,6 +73,7 @@
 /*Schrift der Kategorien und der abstand dazwischen*/
 
         .navbar-dropdown{
+            font-size: medium;
             justify-content: center;
             list-style: none;
             text-decoration: none;
@@ -126,7 +127,7 @@
         .navbar-dropdown:hover{
                 color: #6f5c48;
                 text-shadow: #050404;
-                font-weight: bolder;
+                font-weight: bold;
             }
         .navbar-dropdown:hover .navbar-dropdown-content {display: block;}
         .navbar-dropdown-content-block b:hover{
@@ -200,26 +201,42 @@
         }
 
         .icons-dropdown-content {
+            align-items: center;
+            margin-top: 30px;
+            padding: 10px;
             width: 300px;
             text-align:center;
-            padding-top: 30px;
             display: none;
-            background-color: rgba(251, 250, 246, 0);
-            left: calc(100vw - 300px);
+            background-color: rgb(251, 250, 246);
+            left: calc(100% - 300px);
             min-width: 160px;
             z-index: 1;
             position:fixed;
             top: 70px;
+            box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
+
+        }
+        .icons-dropdown-content h1 {
+            align-self: center;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px;
+            font-size: medium;
+            background-color: #c6b39f;
+            width: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: fit-content;
+            color: #8b735b;
+            font-weight: normal;
         }
         .icons-dropdown-content-block {
-            padding: 10px;
             display: grid;
             grid-template-columns:100px 200px;
             align-items: left;
             gap: 10px;
             height: fit-content;
             background-color: rgba(251, 250, 246, 1);
-            box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.5);
         }
         .icons-dropdown-content-block b{
             font-family: Arial, Helvetica, sans-serif;
