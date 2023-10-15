@@ -1,14 +1,16 @@
 body{
+    width: 100%;
     background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
     font-family: Arial, sans-serif;
 }
 .table-container{
+    font-size: small;
     min-height: 300px;
-    width: 100%;
+    max-width: 100%;
     display: grid;
-    grid: auto/ 45% 45%;
+    grid: auto/ 30% 60%;
     gap: 10%;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .table-container table{
