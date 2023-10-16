@@ -1,0 +1,41 @@
+.error {
+    color: red;
+}
+
+.form-group {
+    display:table-row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display:inline-block;
+    width: 30vw;
+    min-width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group input  {
+    margin-left: 10px;
+    width: 60vw;
+    padding: 5px;
+}
+
+/* .form-group input[type="email"]  {
+    margin-left: 100px;
+    width: 800px;
+    padding: 5px;
+}
+*/
+.form-group input[type="nachricht"]  {
+    margin-left: 10px;
+    width: 60vw;
+    padding: 5px;
+}
+/*        .form-group input[type="tel"]  {
+    margin-left: 100px;
+    width: 800px;
+    padding: 5px;
+} */
