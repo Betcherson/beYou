@@ -409,9 +409,10 @@
         }
 
         .containerbest .bestsellers {
+            align-self: center;
             margin-top: 40px;
             display: grid;
-            grid: auto / auto auto auto auto auto;
+            grid: auto / 20% 20% 20% 20% 20%;
             gap: 10px;
         }
 
@@ -423,8 +424,6 @@
 
 
         .containerbest .bestsellers .item {
-            height: calc(3vw *6);
-            padding-bottom: 25%;
             background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
             justify-content: center;
             align-items: center;
