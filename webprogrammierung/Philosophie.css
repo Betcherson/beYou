@@ -1,15 +1,14 @@
 body{
     width: 100%;
-    width: 100%;
     background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
     align-content: center;
     font-family: Arial, sans-serif;
 }
 .table-container{
-    font-size: small;
+    font-size: medium;
     max-width: 100%;
     display: grid;
-    grid: auto/ 35% 55%;
+    grid: auto/ 40% 40%;
     gap: 10%;
     padding: 20px;
 }
@@ -18,4 +17,35 @@ body{
     width: 100%;
     border-collapse: collapse;
 }
+
+.Philosophie {
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+           
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+
+.Psst{
+    
+    text-align: center;
+   
+}
+
+.red-text {
+    color: red;
+}
+.orange-text {
+    color: orange;
+}
+.green-text {
+    color: green;
+}
+
 
