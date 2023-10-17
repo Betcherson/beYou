@@ -35,6 +35,7 @@
             align-items: center;
             text-align: center;
             font-size: 14px;
+            border-radius: 100px;
         }
         .containerwar .warenkorb .item:hover{
             left: 0;

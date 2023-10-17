@@ -81,6 +81,7 @@
             color: #8b735b; /* Bräunliche Schriftfarbe für Menü */
         }
 
+
         .navbar-dropdown a {
             text-decoration: none;
             margin-right: 20px;
@@ -458,6 +459,10 @@
             left: 0;
             width: 100%;
         }
+        .containerbest .bestsellers .item a{
+            text-decoration: none;
+            color: #8b735b;
+        }
 
 
         footer {
@@ -543,5 +548,17 @@ h5{
     background:#5f9de4d0;
     opacity: 1;
     transition: 0.3s all;
+  }
+  .containerproduct{
+    gap: 20px;
+    padding:20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .containerproduct .abschnitt{
+    display: inherit;
+  }
+  .containerproduct .abschnitt .bilder{
+    padding-bottom: 10px
   }
 
