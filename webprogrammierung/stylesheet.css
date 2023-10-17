@@ -511,5 +511,37 @@ h5{
     font-weight: lighter;
 }
 
+/*Produktinformationen*/
 
+.small-img-group{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .small-img-col{
+    flex-basis:24%;
+    cursor: pointer;
+  }
+
+  .singleproduct select{
+   display: block;
+   padding: 5px 10px;
+  }
+
+  .singleproduct input{
+   width:50px;
+   height: 40px;
+   padding-left: 10px;
+   font-size:16px;
+   margin-right: 10px;
+  }
+  .singleproduct input:focus{
+    outline: none; 
+  }
+
+  .buy-button{
+    background:#5f9de4d0;
+    opacity: 1;
+    transition: 0.3s all;
+  }
 
