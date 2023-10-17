@@ -7,7 +7,12 @@
         <title>beYou - Damen Pullover</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="iconfont\material-icons.css" />
-
+        <script>
+            function changeMainImage(imageSource) {
+                const mainImage = document.getElementById("mainImage");
+                mainImage.src = imageSource;
+            }
+        </script>
     </head>
 
     <body>
@@ -117,38 +122,39 @@
     <main>
 <div class="container">
         <section class ="containerproduct">
-            <div class="abschnitt">
-                <div class="bilder">
-                    <img class ="img-fluid w-100 pb-1" src= "b-v/Produktfotos/pexels-alena-shekhovtcova-6996083.jpg" alt="" style="width:100%"> 
-                </div>
-                <div class="bilder">
 
-                    <div class="small-img-group">
-                     <div class="small-img-col">
-                        <img src="b-v/Produktfotos/pexels-alena-shekhovtcova-6996083.jpg" width="100%" class="small-img" alt="">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="b-v/Produktfotos/pexels-alena-shekhovtcova-6996083.jpg" width="100%" class="small-img" alt="">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="b-v/Produktfotos/pexels-alena-shekhovtcova-6996083.jpg" width="100%" class="small-img" alt="">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="b-v/Produktfotos/pexels-alena-shekhovtcova-6996083.jpg" width="100%" class="small-img" alt="">
+                <div class="div1">
+                    <div class="bilder">
+                        <img id="mainImage" class="img-fluid w-100 pb-1" src="b-v/armedangels/-naaruko01-fudge.jpg" alt="" style="width:100%">
                     </div>
                 </div>
-            </div>
-            </div>
+                <div class="div2">
 
-
-
-
-
-
-                <div class="col-lg-6 col-md-12 col-12">
-                  <h6> Damen / Pullover</h6>
-                  <h3 class="py-4"> Zara - Gestrickter Pullover Beige</h3>
-                  <h2>39,99€</h2>
+                    <div class="bilder">
+                        <div class="small-img-group">
+                            <div class="small-img-col">
+                                <img src="b-v/armedangels/-naaruko01-fudge.jpg" width="100%" class="small-img" alt="" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="b-v/armedangels/-naaruko01-sunset.jpg" width="100%" class="small-img" alt="" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="b-v/armedangels/naaruko-light-grey-melange.jpg" width="100%" class="small-img" alt="" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="b-v/armedangels/naaruko-multicolor01-oatmilk.jpg" width="100%" class="small-img" alt="" onclick="changeMainImage(this.src)">
+                            </div>
+                            <div class="small-img-col">
+                                <img src="b-v/armedangels/naaruko-oatmilk.jpg" width="100%" class="small-img" alt="" onclick="changeMainImage(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div3">
+                <div class="produktname">
+                  <h6> NAARUKO</h6>
+                  <h3 class="py-4"> PULLOVER OVERSIZED FIT AUS BIO-BAUMWOLL MIX</h3>
+                  <h2>119,90 €</h2>
                   <select class="my-3">
                     <option>Größe wählen</option>
                     <option>XS</option>
@@ -157,8 +163,36 @@
                     <option>L</option>
                     <option>XL</option>
                   </select>
+                </div>
                   <input type ="number" value="1">
                   <button class="buy-button">In den Warenkorb</button>
+                </div>
+                <div class="div4">
+                    <h5>PRODUKTDETAILS <br>
+                        - Rundhalsausschnitt<br>
+                        - Taschen: Keine Taschen<br>
+                        - Verschlussart: Kein Verschluss<br>
+                        - Optik: Einfarbig<br>
+                        - Ärmel: Langarm<br>
+                        - Produktionsort: Istanbul, Türkei<br>
+                        - Produzent: Teksim Giyim Sanayi ve Ticaret Ltd. Sti<br><br>
+                        PASSFORM & GRÖSSE<br>
+                        Passform<br>
+                        - Schnitt: Loose Fit<br>
+                        Maße<br>
+                        - 57.0cm<br>
+                        Modelgröße<br>
+                        - Small: Unser Model ist 180 cm groß und trägt Größe S<br>
+                        Material <br>
+                        - Main Fabric: 48% Baumwolle (bio), 21% Wolle (bio), 21% Wolle (recycelt), 10% Polyamid (recycelt) <br><br>
+                        Wasch- & Pflegehinweise
+                        - Handwäsche	<br>- Trocknen im Trockner nicht möglich <br>- keine Chemische Reinigung möglich	<br>- nicht bleichen <br>- nicht heiß bügeln
+                        
+                    </h5>
+                        
+                </div>
+                <div class="div5">
+
                   <h4 class="mt-5 mb-5">Siegel und Zertifikate</h4>
                   <span>made with 100% organic materials. Certified by Control Union Certifications license number 200026</span>
                 </div>
@@ -187,7 +221,7 @@
             </div>
         </div>               
     </main>
-</div>
+</div> 
     <footer>
         <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
     </footer>
