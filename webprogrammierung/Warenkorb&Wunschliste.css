@@ -84,6 +84,12 @@
     left: 0;
     width: 100%;
 }
+.buybutton{
+    align-items: end;
+    text-align: end;
+    align-content: end;
+    padding: 20px;
+}
 .buybutton input[type="submit"] {
     background-color: #90b3be;
     /*background-color: #5f9de4d0; /* Sanfter Blauton für Suchknopf */
