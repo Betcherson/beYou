@@ -5,6 +5,8 @@ body{
     font-family: Arial, sans-serif;
 }
 .table-container{
+    display: block;
+    justify-content: center;
     font-size: medium;
     max-width: 100%;
     display: grid;
@@ -12,9 +14,14 @@ body{
     gap: 10%;
     padding: 20px;
 }
+.table-container p{
+    display:block; 
+    text-align: justify; 
+    hyphens: auto;
+}
 
 .table-container table{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
 }
 
