@@ -5,6 +5,8 @@ body{
     font-family: Arial, sans-serif;
 }
 .table-container{
+    display: block;
+    justify-content: center;
     font-size: medium;
     max-width: 100%;
     display: grid;
@@ -12,9 +14,14 @@ body{
     gap: 10%;
     padding: 20px;
 }
+.table-container p{
+    display:block; 
+    text-align: justify; 
+    hyphens: auto;
+}
 
 .table-container table{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
 }
 
@@ -48,4 +55,18 @@ body{
     color: green;
 }
 
+.green-bullet::before {
+    content: "\2022"; /* Unicode für einen Bulletpoint */
+    color: green;
+    font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
+    line-height: 10px; /* Zentriert den Bulletpoint vertikal */
+    margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
+}
 
+.orange-bullet::before {
+    content: "\2022"; /* Unicode für einen Bulletpoint */
+    color: orange;
+    font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
+    line-height: 10px; /* Zentriert den Bulletpoint vertikal */
+    margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
+}
