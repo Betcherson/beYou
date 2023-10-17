@@ -10,8 +10,8 @@ body{
     font-size: medium;
     max-width: 100%;
     display: grid;
-    grid: auto/ 40% 40%;
-    gap: 10%;
+    grid: auto/ 45% 45%;
+    gap: 5%;
     padding: 20px;
 }
 .table-container p{
