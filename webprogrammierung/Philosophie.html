@@ -217,7 +217,7 @@
                             Das Siegel steht für fair angebaute und gehandelte Produkte, bei dem alle
                             Zutaten zu 100 Prozent unter Fairtrade-Bedingungen gehandelt sind und physisch 
                             rückverfolgbar sind.</td>
-                        <td><i class="material-icons">
+                        <td><i class="material-icons"onclick="showPopup('Fairtrade')">
                             visibility
                         </i></td>
                     </tr>
@@ -229,7 +229,7 @@
                         <td>Richtlinien für Naturtextilien. Die gesamte textile Produktionskette wird, in ökologischer 
                             und sozialverantwortlicher Hinsicht, abgebildet. Bewusst wird hierbei eine eingeschränkte Palette an Qualitäten und Produkten in Kauf genommen.
                             Derzeit der Standard mit den höchsten Ansprüchen an textile Ökologie und zeigt das im Augenblick maximale, realisierbare Niveau auf. </td>
-                        <td><i class="material-icons">
+                        <td><i class="material-icons" onclick="showPopup('popup1')">
                             visibility
                         </i></td>
                     </tr>
@@ -257,6 +257,36 @@
                 <p>Hier können Sie zusätzliche Informationen für das Textiles Vertrauen-Siegel anzeigen.</p>
             </div>
         </div>
+
+        <div id="Fairtrade" class="popup">
+            <span class="popup-close" onclick="hidePopup('Fairtrade')">&times;</span>
+            <span class="popup-overlay" onclick="hidePopup('Fairtrade')">&times;</span>
+        <div class="popup-content">
+            <h1>Detailansicht - Fairtrade Siegel</h2>
+                <div style="display: flex; justify-content: center; align-items: center; height: 200px;">
+                    <img src="b-v\FairtradeSiegel.png" width="150px" height="150px" style="object-fit: contain;">
+                </div>                
+            <p>Fairtrade kennzeichnet Waren, die aus fairem Handel stammen und bei deren Herstellung
+                bestimmte soziale, ökologische und ökonomische Kriterien eingehalten wurden.
+                Das Siegel steht für fair angebaute und gehandelte Produkte, bei dem alle
+                Zutaten zu 100 Prozent unter Fairtrade-Bedingungen gehandelt sind und physisch 
+                rückverfolgbar sind.</p>
+                <h2>Kriterien</h2>
+                <p>- Garantie zur Einhaltung sozialer Standards. 
+                </br>
+                   - Umweltschonender Anbau und Schutz der natürlichen Ressourcen. 
+                </br>
+                   - Förderung des Bio-Anbaus und Verbot gewisser Pestizide. </p>
+                </br>
+                <h2>Bewertung & Kritik</h2>
+                <p>- Hohe Sozialstandards. 
+                </br>
+                   - Fairtrade-Baumwolle ist nicht immer aus kontrolliert biologischem Anbau. 
+                </br>
+                   - Der Anteil an fair-gehandelten Rohstoffen ist im Endprodukt oft nicht klar erkennbar. </p>
+                </br>
+        </div>
+    </div>
         <footer>
             <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
         </footer>
