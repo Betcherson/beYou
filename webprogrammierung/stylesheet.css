@@ -44,6 +44,7 @@
             right: 0;
             z-index: 10;
             height: 75px;
+            
         }
 
 /* container der das logo enthält*/
@@ -320,6 +321,8 @@
             max-width:100%; /* Container auf 95% der Seitenbreite vergrößern */
             margin-top: 105px;
             padding-top: 0px;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .container h2 {
@@ -384,6 +387,18 @@
             height: 100%;
             background-color: #f5f3ea89; /* Milchig weiße Farbe mit Transparenz */
             border-width: 0;
+        }
+        .overlay .fest p{
+            font-family:'MarckScript-Regular';
+            margin-top: 15px;
+            font-size: 30px;
+            color: #f5f3ea;
+        }
+        .overlay .fest h1{
+            color: #79939b;
+            font-weight: bold;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px #f5f3ea;
         }
 
         .overlay .maus{
