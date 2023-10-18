@@ -8,6 +8,31 @@
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="Philosophie.css">
         <link rel="stylesheet" href="iconfont\material-icons.css"/>
+        <script>
+        function showPopup(popupId) {
+            var popup = document.getElementById(popupId);
+            if (popup) {
+                popup.style.display = "block";
+
+                var overlay = popup.querySelector(".popup-overlay");
+        overlay.addEventListener("click", function (event) {
+            if (event.target === overlay) {
+                hidePopup(popupId);
+            }
+        });
+            }
+        }
+        
+        function hidePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup) {
+        popup.style.display = "none";
+                popup.style.display = "none";
+                var overlay = popup.querySelector(".popup-overlay");
+                overlay.removeEventListener("click", null);
+            }
+        }
+    </script>
     </head>
 <body>
     <header>
@@ -217,11 +242,20 @@
                             Diese gewährleisten Aspekte wie betrieblicher Umweltschutz sowie soziale Verantwortung im 
                             Produktionsprozess, welche von Oeko-Tex überprüft und gefördert werden.
                             Das Textilsiegel ist am weitesten verbreitet, da die Standards recht niedrig sind.</td>
-                        <td><i class="material-icons">
+                        <td><i class="material-icons" onclick="showPopup('popup1')">
                             visibility
                         </i></td>
                     </tr>
             </table>
+        </div>
+        <!-- jedes Popup muss so geschrieben werden und dem zugehörigen icon wird die id zugeschrieben -->
+        <div id="popup1" class="popup">
+                <span class="popup-close" onclick="hidePopup('popup1')">&times;</span>
+                <span class="popup-overlay" onclick="hidePopup('popup1')">&times;</span>
+            <div class="popup-content">
+                <h2>Zusätzliche Informationen</h2>
+                <p>Hier können Sie zusätzliche Informationen für das Textiles Vertrauen-Siegel anzeigen.</p>
+            </div>
         </div>
         <footer>
             <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>

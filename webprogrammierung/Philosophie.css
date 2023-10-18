@@ -4,6 +4,9 @@ body{
     align-content: center;
     font-family: Arial, sans-serif;
 }
+i{
+    cursor: pointer;
+}
 .table-container{
     display: block;
     justify-content: center;
@@ -72,4 +75,54 @@ body{
 .table a{
 color: #8b735b;
 text-decoration: none;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content {
+    position: fixed;
+    top:25vh;
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup-close {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 00px;
+    right: 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup h2 {
+    font-size: 24px;
+}
+
+.popup p {
+    font-size: 16px;
 }
