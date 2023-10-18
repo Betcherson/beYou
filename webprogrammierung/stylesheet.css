@@ -63,8 +63,9 @@
 
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
-            text-align: left;
-            grid: 20px / 70px 70px 105px 190px;
+            text-align: center;
+            vertical-align: middle;
+            grid: 20px / 180px 105px 190px;
             column-gap: 10px;
             list-style: none;
             display: grid;
@@ -77,14 +78,15 @@
             justify-content: center;
             list-style: none;
             text-decoration: none;
-            margin-right: 20px;
+            margin-right: 0px;
             color: #8b735b; /* Bräunliche Schriftfarbe für Menü */
         }
 
 
         .navbar-dropdown a {
+            text-align: center;
             text-decoration: none;
-            margin-right: 20px;
+            margin-right: 0px;
             color: #8b735b;
             text-shadow: inherit;
         }
@@ -461,6 +463,7 @@
         }
         .containerbest .bestsellers .item a{
             text-decoration: none;
+            font-size: 10px;
             color: #8b735b;
         }
 
