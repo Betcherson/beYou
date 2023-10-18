@@ -57,15 +57,15 @@ body{
 
 .green-bullet::before {
     content: "\2022"; /* Unicode für einen Bulletpoint */
-    color: green;
+    color: #bfdcae;
     font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
     line-height: 10px; /* Zentriert den Bulletpoint vertikal */
     margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
 }
 
-.orange-bullet::before {
+.yellow-bullet::before {
     content: "\2022"; /* Unicode für einen Bulletpoint */
-    color: orange;
+    color: #d7cda4;
     font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
     line-height: 10px; /* Zentriert den Bulletpoint vertikal */
     margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
