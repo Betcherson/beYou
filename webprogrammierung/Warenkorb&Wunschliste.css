@@ -3,7 +3,7 @@
             margin: 70px auto;
         }
         table{
-            width: 90%;    
+            width: 100%;    
             border-collapse: collapse; 
         }
         .produktinfo{
@@ -11,7 +11,8 @@
             flex-wrap: wrap;
         } 
         th{
-            text-align: center;
+            width: 80%;
+            text-align: left    ;
             padding: 5px;
             color: #fff;
             background: #8b735b;
@@ -39,10 +40,11 @@
             display: flex;
             justify-content: flex-end;
         }
-        .summetotal .table{
-            border-top: 3px solid #8b735b;
+        .summetotal table{
+            border-top: 3px solid #90b3be   ;
             width: 100%;
             max-width: 350px;
+            margin-right: 5%;
         }
         td:last-child{
             text-align: right;
