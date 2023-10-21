@@ -318,6 +318,7 @@
             max-width:100%; /* Container auf 95% der Seitenbreite vergrößern */
             margin-top: 105px;
             padding-top: 0px;
+            align-items: center;
         }
 
         .container h2 {

@@ -1,101 +1,52 @@
         /* Container für den Warenkorb*/
-        .containerwar{
-            max-width: 90%; /* Container auf 95% der Seitenbreite vergrößern */
-            margin: 0px 300px 0px 300px;
-            padding: 0px;
+        .seitewarenkorb{
+            margin: 70px auto;
         }
-        .containerwar h3 {
-            color: #4a4a4a; /* Dunkelgrauer Text */
-            font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
-            text-align: center; /* Überschrift zentrieren */
+        table{
+            width: 90%;    
+            border-collapse: collapse; 
         }
-        .containerwar .warenkorb {
-            align-items: center;
+        .produktinfo{
+            display: flex;
+            flex-wrap: wrap;
+        } 
+        th{
             text-align: center;
-            justify-content: center;
-            margin-top: 0px;
-            display: grid;
-            grid-template-columns: 20% 20% 20% 20% 20%;
-            grid-auto-rows: calc(20vw*4/3);
-            gap: 10px;
+            padding: 5px;
+            color: #fff;
+            background: #8b735b;
+            font-weight: normal;
         }
-
-        .containerwar .warenkorb h3 {
-            color: #4a4a4a; /* Dunkelgrauer Text */
-            font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
-            text-align: center; /* Überschrift zentrieren */
+        td{
+            padding: 10px 5px;
         }
+        td input{
+            width: 40px;
+            height: 30px;
+            padding: 5px;
 
-
-        .containerwar .warenkorb .item {
-            display: block;
-            width: 90%;
-            background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
-            justify-self: center;
-            align-items: center;
-            text-align: center;
-            font-size: 14px;    
-            border-radius: 100px;
         }
-        .containerwar .warenkorb .item:hover{
-            left: 0;
+        td a{
+            color: #90b3be          ;
+            font-size: 12px;
+        }
+        td img{
+            width: 80px;
+            height: 80px;
+            margin-right: 10px; 
+        }
+        .summetotal{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .summetotal .table{
+            border-top: 3px solid #8b735b;
             width: 100%;
+            max-width: 350px;
         }
- /* Container für die Wunschliste*/
- .containerfav{
-    max-width: 90%; /* Container auf 95% der Seitenbreite vergrößern */
-    margin: 0px 300px 0px 300px;
-    padding: 0px;
-}
-.containerfav h3 {
-    color: #4a4a4a; /* Dunkelgrauer Text */
-    font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
-    text-align: center; /* Überschrift zentrieren */
-}
- .containerfav .favoriten {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-auto-rows: calc(20vw*4/3);
-    gap: 10px;
-}
-
-.containerfav .favoriten h3 {
-    color: #4a4a4a; /* Dunkelgrauer Text */
-    font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
-    text-align: center; /* Überschrift zentrieren */
-}
-
-
-.containerfav .favoriten .item {
-    display: block;
-    width: 90%;
-    background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 5px;
-}
-.containerfav .favoriten .item:hover{
-    left: 0;
-    width: 100%;
-}
-.buybutton{
-    align-items: end;
-    text-align: end;
-    align-content: end;
-    padding: 20px;
-}
-.buybutton input[type="submit"] {
-    background-color: #90b3be;
-    /*background-color: #5f9de4d0; /* Sanfter Blauton für Suchknopf */
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer; /* Mauszeiger ändert sich beim Überfahren */
-}
+        td:last-child{
+            text-align: right;
+        }
+        th:last-child{
+            text-align: right;    
+        }
