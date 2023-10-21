@@ -44,6 +44,7 @@
             right: 0;
             z-index: 10;
             height: 75px;
+            
         }
 
 /* container der das logo enthält*/
@@ -63,8 +64,9 @@
 
 /*Die Navbar enthählt die Kategorien*/
         .navbar {
-            text-align: left;
-            grid: 20px / 70px 70px 105px 190px;
+            text-align: center;
+            vertical-align: middle;
+            grid: 20px / 180px 105px 190px;
             column-gap: 10px;
             list-style: none;
             display: grid;
@@ -77,14 +79,15 @@
             justify-content: center;
             list-style: none;
             text-decoration: none;
-            margin-right: 20px;
+            margin-right: 0px;
             color: #8b735b; /* Bräunliche Schriftfarbe für Menü */
         }
 
 
         .navbar-dropdown a {
+            text-align: center;
             text-decoration: none;
-            margin-right: 20px;
+            margin-right: 0px;
             color: #8b735b;
             text-shadow: inherit;
         }
@@ -318,7 +321,8 @@
             max-width:100%; /* Container auf 95% der Seitenbreite vergrößern */
             margin-top: 105px;
             padding-top: 0px;
-            align-items: center;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .container h2 {
@@ -383,6 +387,18 @@
             height: 100%;
             background-color: #f5f3ea89; /* Milchig weiße Farbe mit Transparenz */
             border-width: 0;
+        }
+        .overlay .fest p{
+            font-family:'MarckScript-Regular';
+            margin-top: 15px;
+            font-size: 30px;
+            color: #f5f3ea;
+        }
+        .overlay .fest h1{
+            color: #79939b;
+            font-weight: bold;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px #f5f3ea;
         }
 
         .overlay .maus{
@@ -462,6 +478,7 @@
         }
         .containerbest .bestsellers .item a{
             text-decoration: none;
+            font-size: 10px;
             color: #8b735b;
         }
 
@@ -590,3 +607,66 @@ h5{
 }
 .small-img:hover {
     border-right: 2px solid #8b735b;
+}
+
+/* Rezensionen */
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    flex:1 1 30rem;
+    box-shadow:0 .5rem  1.5rem rgba(0,0,0,1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0px solid rgba(0,0,0,1);
+}
+
+.review .box-container .box .fa-quote-right{
+        position:absulote;
+        bottom: 3rem; right:3rem;
+        font-size: 6rem;
+        color: #eee;
+}
+
+review .box-container .box .stars i{
+    color: #79939b;
+    font-size:2rem;
+}
+
+review .box-container .p{
+    color: #999;
+    font-size:1.5rem;
+    line-height: 1.5;
+    padding-top:2rem;
+}
+
+.review .box-container .box .user{
+    display:flex;
+    align-items:center;
+    padding-top: 2rem;
+    
+}
+
+.review .box-container .box .user img{
+    height:6rem;
+    width:6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:1rem;
+
+}
+
+.review .box-container .box .user h3{
+    font-size: 2rem;
+    color:#333;
+}
+
+.review .box-container .box .user span{
+    font-size:1.5rem;
+    color:#999;
+}
