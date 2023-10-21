@@ -3,8 +3,9 @@
             margin: 70px auto;
         }
         table{
-            width: 100%;    
+            width: 90%;    
             border-collapse: collapse; 
+            margin-left: 5%;
         }
         .produktinfo{
             display: flex;
@@ -51,4 +52,10 @@
         }
         th:last-child{
             text-align: right;    
+        }
+        .doubleunderline{
+            text-decoration: underline;
+            text-decoration-color: #90b3be;
+            text-decoration-style: double;
+            text-decoration-line: underline double;
         }
