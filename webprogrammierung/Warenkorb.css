@@ -3,9 +3,9 @@
             margin: 70px auto;
         }
         table{
-            width: 90%;    
-            border-collapse: collapse; 
-            margin-left: 5%;
+            width: 96%;    
+            border-collapse: collapse;
+            margin-left: 15px; 
         }
         .produktinfo{
             display: flex;
@@ -13,7 +13,7 @@
         } 
         th{
             width: 80%;
-            text-align: left    ;
+            text-align: left;
             padding: 5px;
             color: #fff;
             background: #8b735b;
@@ -45,7 +45,7 @@
             border-top: 3px solid #90b3be   ;
             width: 100%;
             max-width: 350px;
-            margin-right: 5%;
+            margin-right: 35px;
         }
         td:last-child{
             text-align: right;
