@@ -58,4 +58,15 @@
             text-decoration-color: #90b3be;
             text-decoration-style: double;
             text-decoration-line: underline double;
+        }   
+        .kaufbottun input[type="submit"] {
+            width: 85px;
+            background-color: #90b3be;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+        .kaufbottun input[type="submit"]:hover {
+        background-color: #79939b;
         }
