@@ -52,3 +52,16 @@ td img{
     text-decoration-style: double;
     text-decoration-line: underline double;
 }
+.heart i {
+    font-size: 40px;
+    margin-right: 10px; 
+    color: #8b735b;
+    cursor: pointer;
+    text-decoration: none;
+}
+.heart i:hover{
+    color: #6f5c48;
+}
+.heart a{
+    font-size: 0px;
+}
