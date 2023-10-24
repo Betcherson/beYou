@@ -55,12 +55,12 @@ td img{
 .heart i {
     font-size: 40px;
     margin-right: 10px; 
-    color: #8b735b;
+    color: #90b3be;
     cursor: pointer;
     text-decoration: none;
 }
 .heart i:hover{
-    color: #6f5c48;
+    color: #79939b;
 }
 .heart a{
     font-size: 0px;
