@@ -453,7 +453,8 @@
             display: grid;
             grid-template-columns: 20% 20% 20% 20% 20%;
             grid-auto-rows: calc(20vw*4/3);
-            gap: 10px;
+            row-gap: 50px;
+            column-gap: 10px;
         }
 
         .containerbest .bestsellers h3 {
