@@ -450,10 +450,11 @@
             text-align: center;
             justify-content: center;
             margin-top: 40px;
+            padding-bottom: 20px;
             display: grid;
             grid-template-columns: 20% 20% 20% 20% 20%;
             grid-auto-rows: calc(20vw*4/3);
-            row-gap: 50px;
+            row-gap: 60px;
             column-gap: 10px;
         }
 
@@ -467,11 +468,14 @@
         .containerbest .bestsellers .item {
             display: block;
             width: 90%;
-            background-color: #e8e8e8; /* Helle Hintergrundfarbe für Produkte */
+            background-color: #90b3be78; /* Helle Hintergrundfarbe für Produkte */
             justify-self: center;
             align-items: center;
             text-align: center;
             font-size: 14px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-radius: 10px;
         }
         .containerbest .bestsellers .item:hover{
             left: 0;
