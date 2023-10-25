@@ -437,13 +437,12 @@
         .containerbest{
             max-width: 90%; /* Container auf 95% der Seitenbreite vergrößern */
             margin: 0 auto;
-            padding: 20px;
-        }
-        .containerbest h3 {
-            color: #4a4a4a; /* Dunkelgrauer Text */
-            font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
-            text-align: center; /* Überschrift zentrieren */
-        }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 0px;
+            }
+
 
         .containerbest .bestsellers {
             align-items: center;
@@ -457,9 +456,15 @@
             row-gap: 60px;
             column-gap: 10px;
         }
+        .containerbest h3 {
+            color: #8b735b; /* Dunkelgrauer Text */
+            font-size: 30px; /* Größe der "Bestseller" Schrift erhöht */
+            text-align: center; /* Überschrift zentrieren */
+            padding-bottom: 10px;
+        }
 
         .containerbest .bestsellers h3 {
-            color: #4a4a4a; /* Dunkelgrauer Text */
+            color: #8b735b; /* Dunkelgrauer Text */
             font-size: 28px; /* Größe der "Bestseller" Schrift erhöht */
             text-align: center; /* Überschrift zentrieren */
         }
