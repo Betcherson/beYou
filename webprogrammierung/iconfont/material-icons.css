@@ -31,11 +31,27 @@
   color: #8b735b;
 }
 .material-icons a{
-  font-size: 40px;
-  margin-right: 20px; /* Mehr Abstand zwischen den Icons */
+  font-size: 30px;
+  margin-right: 0px; /* Mehr Abstand zwischen den Icons */
   color: #8b735b;
   text-decoration: none;
 }
+/* Leeres Herz */
+.favorite {
+  justify-self: end;
+  height: 24px;
+  margin-right: 20px;
+  font-size: 24px;
+  color:#8b735b;
+  cursor: pointer;
+}
+
+/* Zustand bei Klick: Leeres Herz */
+.favorite.empty {
+  font-size: 24px;
+  color: #8b735b;
+}
+
 
 @font-face {
   font-family: "Material Icons Outlined";

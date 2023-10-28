@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="cookie-popup" id="cookiePopup">
-        <p>Diese Website verwendet Cookies. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
+        <p>Diese Website verwendet Cookies. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu <br> <br>
+            <i>Die Bilder auf dieser Seite wurden von ARMEDANGLES und IVYOAK zur verfügung gestellt.
+            </i>
+        </p>
         <button onclick="acceptCookies()">Akzeptieren</button>
     </div>
 
@@ -25,6 +28,17 @@
         if (!document.cookie.includes("acceptedCookies=true")) {
             document.getElementById("cookiePopup").style.display = "block";
         }
+    </script>
+    <script>
+    function toggleFavorite(heart) {
+        if (heart.classList.contains('empty')) {
+            heart.classList.remove('empty');
+            heart.textContent = 'favorite';
+        } else {
+            heart.classList.add('empty');
+            heart.textContent = 'favorite_border';
+        }
+    }
     </script>
 
     <header>
@@ -55,27 +69,6 @@
                 </a>
             </div>
 
-            <!-- <div class="navbar-dropdown">
-                <a href="Herren.html">Herren
-                <div class="navbar-dropdown-content">
-                    <div class="navbar-dropdown-content-block">
-                        <b href="#">Bestseller</b>
-                        <b href="#">Oberteile</b>
-                        <b href="#">Mäntel/Jacken</b>
-                        <b href="#">Hosen</b>
-                        <b href="#">Jeans</b>
-                        <b href="#">Shorts</b>
-                        <b href="#">Pullover & Strickjacken</b>
-                        <b href="#">Hoodies & Sweatshirts</b>
-                        <b href="#">Activewear</b>
-                        <b href="#">Anzüge & smarte Bekleidung</b>
-                        <b href="#">Bademode & Strandkleidung</b>
-                        <b href="#">Unterwäsche & Socken</b>
-                </div>
-                </div>
-                </a>
-            </div> -->
-
             <div class="navbar-dropdown">
                 <a href="Neuigkeiten.html">Neuigkeiten
                 </a>
@@ -99,27 +92,27 @@
                     </i>
                 </a>
                 <div class="icons-dropdown">
-                <a href="Warenkorb.html" style="text-decoration: none;">
                     <i class="material-icons">
-                        shopping_basket
+                        <a href="Warenkorb.html">shopping_basket</a>
                         <div class="icons-dropdown-content">
                             <div class="icons-dropdown-content-block">
-                                <div class="icons-dropdown-content-block-tabelle">
-                                <div class="item"></div>
-                                <b href="#">testprodukt</b>
-                            </div>
-                            <h1>Warenkorb anzeigen</h1>
+                            <div class="icons-dropdown-content-block-tabelle">
+                                <div class="item">
+                                            <img src="b-v/armedangels/-naaruko01-fudge.jpg" style="width: 100%;">
+                                        </div>
+                                        <b href="Damen Pullover.html">ARMEDANGLES<br>NAARUKO - PULLOVER OVERSIZED FIT <br> AUS BIO-BAUMWOLL MIX <br> 119,90 €</b>
+                                    </div>
+                            <div><a href="Warenkorb.html"><h1>Warenkorb anzeigen</h1></a></div>
                         </div>
                         </div>
                     </i>
-                </a>
             </div>
                     <div class="icons-dropdown">
-                        <i class="material-icons">
-                            person
+                    <i class="material-icons">
+                            <a href="MeinKonto.html">person</a>
                             <div class="icons-dropdown-content">
                                 <div class="icons-dropdown-content-block">
-                                    <h1>Mein Konto</h1>
+                                    <div><a href="MeinKonto.html"><h1 href="MeinKonto.html">Mein Konto</h1></a></div>
                                     <h1>Meine Bestellungen</h1>
                                     <h1>Kontakt</h1>
                                 </div>
@@ -172,36 +165,55 @@
 
                 <div class="item">
                     <a href="Damen Pullover.html"><img src="b-v/armedangels/-naaruko01-fudge.jpg" style="width: 100%;">
-                        <b>ARMEDANGLES</b> <br>NAARUKO - PULLOVER OVERSIZED FIT <br> AUS BIO-BAUMWOLL MIX <br> 119,90 €</a>
+                        <h1><b>ARMEDANGLES</b> <br> NAARUKO - PULLOVER OVERSIZED FIT AUS BIO-BAUMWOLL MIX <br> 119,90 €</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
                 </div>
                 <div class="item">
-                    <a href=""><img src="b-v/armedangels/tillaa-x-stretch-sky-blue-03.jpg" style="max-width: 100%;">
-                        <b>ARMEDANGLES</b> <br>TILLAA X STRETCH - SKINNY FIT MID WAIST <br> AUS BIO-BAUMWOLL MIX <br>129,90 €</div></a>
+                    <a href=""><img src="b-v/armedangels/tillaa-x-stretch-sky-blue-03.jpg" style="width: 100%; object-fit: cover;">
+                        <h1><b>ARMEDANGLES</b> <br>TILLAA X STRETCH - SKINNY FIT MID WAIST AUS BIO-BAUMWOLL MIX <br>129,90 €</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/armedangels/mairaa-blackblue-light-black01-blue.jpg" style="max-width: 100%;">
-                        <b>ARMEDANGLES</b> <br>MAIRAA BLACKBLUE - MOM FIT HIGH WAIST <br> AUS BIO-BAUMWOLLE <br> 99,90 €</div></a>
+                    <a href=""><img src="b-v/armedangels/mairaa-blackblue-light-black01-blue.jpg" style="width: 100%; object-fit: cover;">
+                        <h1><b>ARMEDANGLES</b> <br>MAIRAA BLACKBLUE - MOM FIT HIGH WAIST AUS BIO-BAUMWOLLE <br> 99,90 €</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/armedangels/enriccaa-soft-teal01-stone.jpg" style="max-width: 100%;">
-                        <b>ARMEDANGLES</b> <br>ENRICCAA SOFT - T-SHIRT SLIM FIT AUS BIO-BAUMWOLLE <br> 39,90 €
-                    </div></a>
+                    <a href=""><img src="b-v/armedangels/enriccaa-soft-teal01-stone.jpg" style="width: 100%; object-fit: cover;">
+                        <h1><b>ARMEDANGLES</b> <br>ENRICCAA SOFT - T-SHIRT SLIM FIT AUS BIO-BAUMWOLLE <br> 39,90 €</h1>
+                    </a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
                 <div class="item">
-                    <a href=""><img src="b-v/armedangels/maarkos-black01-06.jpg" style="max-width: 100%;">
-                        <b>ARMEDANGLES</b> <br>MAARKOS - HEAVYWEIGHT T-SHIRT <br> RELAXED FIT AUS BIO-BAUMWOLL MIX <br>39,90 €</div></a>
+                    <a href=""><img src="b-v/armedangels/maarkos-black01-06.jpg" style="width: 100%; object-fit: cover;">
+                        <h1><b>ARMEDANGLES</b> <br>MAARKOS - HEAVYWEIGHT T-SHIRT RELAXED FIT AUS BIO-BAUMWOLL MIX <br>39,90 €</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/IvyOak/BryceBluse.jpeg" style="max-width: 100%;">
-                        <b>IVYOAK</b> <br> BRYCE - BLUSE <br><br> 149,00€</div></a>
+                    <a href=""><img src="b-v/IvyOak/BryceBluse.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> BRYCE - BLUSE <br><br> 149,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/IvyOak/KalaKleid.jpeg" style="max-width: 100%;">
-                        <b>IVYOAK</b> <br> KALA - KLEID <br><br> 269,00€</div></a>
+                    <a href=""><img src="b-v/IvyOak/KalaKleid.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> KALA - KLEID <br><br> 269,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/IvyOak/KianaStricktop.jpeg" style="max-width: 100%;">
-                        <b>IVYOAK</b> <br> KIANA - STRICKTOP <br><br>145,00€</div></a>
+                    <a href=""><img src="b-v/IvyOak/KianaStricktop.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> KIANA - STRICKTOP <br><br>145,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/IvyOak/PalomaMiaShorts.jpeg" style="max-width: 100%;">
-                        <b>IVYOAK</b> <br> PALOMA MIA - SHORTS <br><br> 99,00€</div></a>
+                    <a href=""><img src="b-v/IvyOak/PalomaMiaShorts.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> PALOMA MIA - SHORTS <br><br> 99,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
                 <div class="item">
-                    <a href=""><img src="b-v/IvyOak/PixieJeans.jpeg" style="max-width: 100%;">
-                        <b>IVYOAK</b> <br> PIXIE - JEANS <BR><BR> 149,00€</div></a>
+                    <a href=""><img src="b-v/IvyOak/PixieJeans.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> PIXIE - JEANS <BR><BR> 149,00€</h1></a>
+                            <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                        </div>
 
         </div>
     </div>
