@@ -2,8 +2,8 @@
     margin: 70px auto;
 }
 table{
-    color: #6f5c48;    
-    width: 96%;    
+    color: hsl(31, 21%, 36%);    
+    width: 97%;    
     border-collapse: collapse;
     margin-left: 15px; 
 }

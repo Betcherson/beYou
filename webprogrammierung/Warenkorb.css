@@ -3,7 +3,7 @@
             margin: 70px auto;
         }
         table{
-            width: 96%;
+            width: 97%;
             color: #6f5c48;    
             border-collapse: collapse;
             margin-left: 15px; 
@@ -48,7 +48,7 @@
             border-top: 3px solid #90b3be   ;
             width: 100%;
             max-width: 350px;
-            margin-right: 35px;
+            margin-right: 23px;
         }
         td:last-child{
             text-align: right;
