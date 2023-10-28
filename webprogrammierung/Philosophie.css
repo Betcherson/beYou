@@ -143,8 +143,10 @@ table.table-hover tr:hover {
     background-color: rgba(200, 200, 200, 0.5);
 }
 table.table-hover {
+    width: 96%;
     color: #8b735b;
     border-spacing: 0cm;
+    margin-left: 15px; 
 }
 table.table-hover td{
     padding: 2px;
