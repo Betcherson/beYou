@@ -31,6 +31,7 @@
   color: #8b735b;
 }
 .material-icons a{
+  font-family: "Material Icons";
   font-size: 30px;
   margin-right: 0px; /* Mehr Abstand zwischen den Icons */
   color: #8b735b;
