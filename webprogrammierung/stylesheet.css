@@ -203,6 +203,7 @@
         .icons a{
             font-size: 0px;
         }
+    
 
         .icons-dropdown-content {
             align-items: center;
@@ -214,7 +215,7 @@
             min-width: 160px;
             z-index: 1;
             position:fixed;
-            top: 70px;
+            top: 60px;
 
         }
         .icons-dropdown-content-block h1 {
@@ -231,8 +232,15 @@
             color: #8b735b;
             font-weight: normal;
         }
+        .icons-dropdown-content-block h1:hover {
+            background-color: #8b735b ;
+            color:#c6b39f;
+        }
         .icons-dropdown-content-block {
-            margin-top: 30px;
+            display: grid;
+            grid-row: auto;
+            grid-column: auto auto;
+            margin-top: 40px;
             padding: 10px;
             align-items: left;
             gap: 10px;
@@ -243,15 +251,17 @@
         }
         .icons-dropdown-content-block-tabelle{
             display: grid;
-            grid-template-columns:100px 200px;
+            grid-template-columns:33% 66%;
             align-items: left;
             gap: 10px;
             height: fit-content;
             background-color: rgba(251, 250, 246, 1);
         }
         .icons-dropdown-content-block-tabelle b{
+            text-wrap: wrap;
+            font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;
-            height: 25px;
+            height: 15px;
             text-align: left;
             color: #8b735b;
             font-weight: normal;
@@ -259,15 +269,14 @@
 
         .icons-dropdown-content a {
             text-align: left;
-            position: fixed;
             top: 0;
             color: black;
-            padding: 12px;
+            padding: 0px;
             text-decoration: none;
             display: block;
         }
 
-        .icons-dropdown-content-block .item {
+        .icons-dropdown-content-block-tabelle .item {
             width: 100px;
             height: 120px;
             padding-bottom: 25%;
@@ -277,6 +286,7 @@
             text-align: center;
             font-size: 14px;
         }
+
         .icons-dropdown:hover{
                 color: #6f5c48;
                 text-shadow: #050404;
@@ -286,7 +296,7 @@
         .icons-dropdown-content-block b:hover{
             color: #6f5c48;
             text-shadow: #050404;
-            font-weight: bold;
+            font-weight:300px;
         }
 
 /*hintergrund der Seite*/
@@ -449,12 +459,12 @@
             text-align: center;
             justify-content: center;
             margin-top: 40px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             display: grid;
-            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-columns: 18% 18% 18% 18% 18%;
             grid-auto-rows: calc(20vw*4/3);
-            row-gap: 60px;
-            column-gap: 10px;
+            row-gap: 100px;
+            column-gap: 20px;
         }
         .containerbest h3 {
             color: #8b735b; /* Dunkelgrauer Text */
@@ -471,10 +481,15 @@
 
 
         .containerbest .bestsellers .item {
-            display: block;
-            width: 90%;
+            display:grid;
+            grid-row: 100%;
+            grid-column: auto auto;
+            align-content: center;
+            width: fit-content;
+            overflow: hidden;
             background-color: #90b3be78; /* Helle Hintergrundfarbe für Produkte */
             justify-self: center;
+            justify-content: center;
             align-items: center;
             text-align: center;
             font-size: 14px;
@@ -484,9 +499,33 @@
         }
         .containerbest .bestsellers .item:hover{
             left: 0;
-            width: 100%;
+            width: 110%;
         }
         .containerbest .bestsellers .item a{
+            width: 100%;
+            display: grid;
+            grid-row: 100%;
+            grid-column: auto auto;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 10px;
+            color: #8b735b;
+            align-content: center;
+            align-items: center;
+        }
+        .containerbest .bestsellers .item img{
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .containerbest .bestsellers .item h1{
+            justify-content: center;
+            justify-self: center;
+            font-weight: 100;
+            align-self: center;
+            text-align: center;
+            padding: 10px;
+            width: 200px;
             text-decoration: none;
             font-size: 10px;
             color: #8b735b;
