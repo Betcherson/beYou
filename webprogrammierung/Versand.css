@@ -31,12 +31,14 @@
     font-size: larger;  
 }
 .weiterbottun input[type="submit"] {
-    width: 85px;
+    width: 150px;
+    height: 30  px;
     background-color: #90b3be;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;    
+    cursor: pointer;  
+    margin-left: 50px;
 }
 .weiterbottun input[type="submit"]:hover {
 background-color: #79939b;
