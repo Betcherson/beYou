@@ -6,7 +6,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;  
-    margin-left: 50px;
+    margin-left: 15%;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -19,10 +19,11 @@ background-color: #79939b;
     text-decoration: underline;
 }
 .container h3{
-    margin-left: 15%;
     color:#90b3be; 
     text-decoration: underline; 
     font-size: larger;  
+    font-size: xx-large; 
+    text-decoration: none;
 }
 
 input[type="radio"]{
@@ -30,6 +31,8 @@ input[type="radio"]{
 }
 
 label{
+    width: 65%;
+    margin-left: 15%;
     align-items: center;
     position: relative;
     color: #e8e8e8;
