@@ -39,6 +39,7 @@
     border-radius: 5px;
     cursor: pointer;  
     margin-left: 50px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 .weiterbottun input[type="submit"]:hover {
