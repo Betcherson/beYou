@@ -458,7 +458,7 @@
             align-items: center;
             text-align: center;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 60px;
             padding-bottom: 30px;
             display: grid;
             grid-template-columns: 18% 18% 18% 18% 18%;
@@ -467,11 +467,13 @@
             column-gap: 20px;
         }
         .containerbest h3 {
-            color: #8b735b; /* Dunkelgrauer Text */
+            color:#90b3be; /* Dunkelgrauer Text */
             font-size: 30px; /* Größe der "Bestseller" Schrift erhöht */
             text-align: center; /* Überschrift zentrieren */
             padding-bottom: 10px;
+            text-shadow: #050404;
         }
+
 
         .containerbest .bestsellers h3 {
             color: #8b735b; /* Dunkelgrauer Text */
