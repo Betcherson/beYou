@@ -12,14 +12,32 @@
     display:inline-block;
     width: 30vw;
     min-width: fit-content;
-    margin-right: 10px;
+    margin-left: 50px;
     margin-bottom: 10px;
     text-align: left;
+    color: #8b735b;
 }
 
 .form-group input  {
-    margin-left: 10px;
-    width: 60vw;
+    margin-left: 15px;
+    width: 60vw;    
     padding: 5px;
 }
 
+.container h3{
+    margin-left: 50px;
+    color:#90b3be; 
+    text-decoration: underline; 
+    font-size: larger;  
+}
+.weiterbottun input[type="submit"] {
+    width: 85px;
+    background-color: #90b3be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+.weiterbottun input[type="submit"]:hover {
+background-color: #79939b;
+}

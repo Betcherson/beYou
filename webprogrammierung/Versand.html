@@ -91,20 +91,19 @@
     </div>
 
 </header>
-<div class="container"></div>
+<div class="container">
+<br>
 <img src="b-v\Bestellung\Versand.png" style="width: 70%; margin-left: 15%;">
-<div class="containerbest">
-    <h3>Versand</h3>
-    <div class="splitscreen">
+    <h3 style="font-size: xx-large; text-decoration: none;">Versand</h3>
         <form action="#" method="post">
-            <h2 style="color: #8b735b; text-decoration: underline; font-size: larger;">Versandadresse</h2>
+            <h3>Versandadresse</h3>
             <div class="form-group">
-                <label for="vorname">Vorname*:</label>
+                <label for="vorname">Vorname:</label>
                 <input type="text" id="vorname" name="vorname" required>
             </div>
     
             <div class="form-group">
-                <label for="name">Name*:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
     
@@ -122,19 +121,38 @@
                 <label for="land">Land:</label>
                 <input type="text" id="land" name="land">
             </div>
-    
-            <div class="form-group">
-                <label for="telefon">Telefonnummer:</label>
-                <input type="tel" id="telefon" name="telefon">
+            <br> 
+            <input style="margin-left: 50px;" type="checkbox" id="identisch" name="identisch" required>
+            <label style="color: #8b735b; margin-left: 15px;" for="identisch">Die Rechnungsadresse ist identisch zur Versandadresse</label>
+            <form action="#" method="post">
+                <h3>Rechnungsadresse</h3>
+                <div class="form-group">
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" id="vorname" name="vorname" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="plz">Postleitzahl:</label>
+                    <input type="text" id="plz" name="plz">
+                </div>
+        
+                <div class="form-group">
+                    <label for="ort">Ort:</label>
+                    <input type="text" id="ort" name="ort">
+                </div>
+        
+                <div class="form-group">
+                    <label for="land">Land:</label>
+                    <input type="text" id="land" name="land">
+                </div>
+                <a href="Zahlungsart.html"><div class="weiterbottun"><input type="submit" value="Weiter"></div></a>
             </div>
-    
-            <div class="form-group">
-                <label for="email">E-Mail*:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-</div>
-</div>
-<footer>
+            <footer>
     <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
 </footer>
 </div>
