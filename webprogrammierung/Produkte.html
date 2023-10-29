@@ -6,6 +6,19 @@
     <title>beYou - Damen</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="iconfont\material-icons.css" />
+    <link rel="stylesheet" href="produkte.css">
+
+          <script>
+            function toggleFavorite(heart) {
+                if (heart.classList.contains('empty')) {
+                    heart.classList.remove('empty');
+                    heart.textContent = 'favorite';
+                } else {
+                    heart.classList.add('empty');
+                    heart.textContent = 'favorite_border';
+                }
+            }
+            </script>
 </head>
 <body>
     <header>
@@ -114,44 +127,156 @@
 </header>
 
     <div class="container">
-        <h1> Damen | <a href="Herren.html">Herren </a></h1>
+        <h2 style="background-color: #90b3be; color: #f5f3ea;">Unsere nachhaltige Damenmode</h2>
+        <h6> Damen <b style="font-size: 60px;">|</b><a href="Herren.html"> Herren </a></h6>
 
     </div>
 
     <div class="containerbest">
         <h3>Bestseller</h3>
         <div class="bestsellers">
-                <div class="item">Produkt 1</div>
-                <div class="item">Produkt 2</div>
-                <div class="item">Produkt 3</div>
-                <div class="item">Produkt 4</div>
-                <div class="item">Produkt 5</div>
+            <div class="item">
+                <a href="Damen Pullover.html"><img src="b-v/armedangels/-naaruko01-fudge.jpg" style="width: 100%;">
+                    <h1><b>ARMEDANGLES</b> <br> NAARUKO - PULLOVER OVERSIZED FIT AUS BIO-BAUMWOLL MIX <br> 119,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+            </div>
+            <div class="item">
+                <a href=""><img src="b-v/IvyOak/PixieJeans.jpeg" style="width: 100%; object-fit: cover;">
+                    <h1><b>IVYOAK</b> <br> PIXIE - JEANS <BR><BR> 149,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
+            <div class="item">
+                <a href=""><img src="b-v/armedangels/mairaa-blackblue-light-black01-blue.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>ARMEDANGLES</b> <br>MAIRAA BLACKBLUE - MOM FIT HIGH WAIST AUS BIO-BAUMWOLLE <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item">
+                    <a href=""><img src="b-v/IvyOak/PalomaMiaShorts.jpeg" style="width: 100%; object-fit: cover;">
+                        <h1><b>IVYOAK</b> <br> PALOMA MIA - SHORTS <br><br> 99,00€</h1></a>
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                    </div>
+    
+                    <div class="item">
+                        <a href=""><img src="b-v/IvyOak/KianaStricktop.jpeg" style="width: 100%; object-fit: cover;">
+                            <h1><b>IVYOAK</b> <br> KIANA - STRICKTOP <br><br>145,00€</h1></a>
+                            <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                        </div>
         </div>
         <h3>Damen</h3>
-        <div class="bestsellers">
-                <div class="item">Produkt 1</div>
-                <div class="item">Produkt 2</div>
-                <div class="item">Produkt 3</div>
-                <div class="item">Produkt 4</div>
-                <div class="item">Produkt 5</div>
-                <div class="item">Produkt 1</div>
-                <div class="item">Produkt 2</div>
-                <div class="item">Produkt 3</div>
-                <div class="item">Produkt 4</div>
-                <div class="item">Produkt 5</div>
-                <div class="item">Produkt 1</div>
-                <div class="item">Produkt 2</div>
-                <div class="item">Produkt 3</div>
-                <div class="item">Produkt 4</div>
-                <div class="item">Produkt 5</div>
-                <div class="item">Produkt 1</div>
-                <div class="item">Produkt 2</div>
-                <div class="item">Produkt 3</div>
-                <div class="item">Produkt 4</div>
-                <div class="item">Produkt 5</div>
-        </div>
     </div>
 
+        <div class="filter-container">
+            <div class="filter-dropdown">
+                <span class="filter-label">Produktkategorie:</span>
+                <select class="filter-select" name="category">
+                    <option value="">Alle Kategorien</option>
+                    <option value="Kleider">Kleider</option>
+                    <option value="Oberteile">Oberteile</option>
+                    <option value="Hosen">Hosen</option>
+                    <option value="Schuhe">Schuhe</option>
+                    <!-- Weitere Kategorien hinzufügen -->
+                </select>
+            </div>
+
+            <div class="filter-dropdown">
+                <span class="filter-label">Marke:</span>
+                <select class="filter-select" name="brand">
+                    <option value="">Alle Marken</option>
+                    <option value="ARMEDANGLES">ARMEDANGLES</option>
+                    <option value="IVYOAK">IVYOAK</option>
+                    <!-- Weitere Marken hinzufügen -->
+                </select>
+            </div>
+
+            <div class="filter-dropdown">
+                <span class="filter-label">Größe:</span>
+                <select class="filter-select" name="size">
+                    <option value="">Alle Größen</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <!-- Weitere Größen hinzufügen -->
+                </select>
+            </div>
+
+            <div class="filter-dropdown">
+                <span class="filter-label">Preis:</span>
+                <select class="filter-select" name="price">
+                    <option value="">Alle Preise</option>
+                    <option value="0-50">0-50 €</option>
+                    <option value="50-100">50-100 €</option>
+                    <option value="100-200">100-200 €</option>
+                    <!-- Weitere Preisbereiche hinzufügen -->
+                </select>
+            </div>
+        
+    </div>
+    <div class="containerbest">
+
+        <div class="bestsellers">
+                <div class="item"><a href=""><img src="b-v/armedangels/mairaa-blackblue-light-black01-blue.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/-naaruko01-fudge.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/-naaruko01-sunset.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/enriccaa-soft-teal01-stone.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/mairaa-blackblue-light-black01-blue.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/tillaa-x-stretch-sky-blue-03.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/naaruko-oatmilk.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/naaruko-multicolor01-oatmilk.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/IvyOak/BryceBluse.jpeg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/IvyOak/KalaKleid.jpeg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/IvyOak/PalomaMiaShorts.jpeg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/IvyOak/PixieJeans.jpeg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/enriccaa-soft-teal01-stone.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/naaruko-oatmilk.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+                <div class="item"><a href=""><img src="b-v/armedangels/-naaruko01-fudge.jpg" style="width: 100%; object-fit: cover;">
+                    <h1><b>MARKE</b> <br>PRODUKT <br> <br> 99,90 €</h1></a>
+                    <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
+                </div>
+        </div>
+    </div>
+</div>
     <footer>
         <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
     </footer>
