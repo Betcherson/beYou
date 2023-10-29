@@ -1,0 +1,51 @@
+.error {
+    color: red;
+}
+
+.form-group {
+    display:table-row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display:inline-block;
+    width: 30vw;
+    min-width: fit-content;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #8b735b;
+}
+
+.form-group input  {
+    margin-left: 15px;
+    width: 60vw;    
+    padding: 5px;
+}
+
+.container h3{
+    margin-left: 50px;
+    color:#90b3be; 
+    text-decoration: underline; 
+    font-size: larger;  
+}
+.weiterbottun input[type="submit"] {
+    width: 150px;
+    height: 35px;
+    background-color: #90b3be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    margin-left: 50px;
+    font-size: 20px;
+}
+.weiterbottun input[type="submit"]:hover {
+background-color: #79939b;
+}
+
+.rufnummer{
+    font-weight: 900;
+    text-decoration: underline;
+}

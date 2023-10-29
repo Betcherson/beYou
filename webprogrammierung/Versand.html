@@ -6,7 +6,7 @@
         <title>beYou - Versand</title>
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="iconfont\material-icons.css" />
-        <link rel="stylesheet" href="Warenkorb.css">
+        <link rel="stylesheet" href="Versand.css">
     </head>
 <body>
     <header>
@@ -91,10 +91,70 @@
     </div>
 
 </header>
-<div class="container"></div>
-<img src="b-v\Versand.png" style="width: 60%; margin-left: 20%;">
-</div>
-<footer>
+<div class="container">
+    <h2>Kostenlose Hotline <div class="rufnummer">030 89 95</div></h2>
+<br>
+<img src="b-v\Bestellung\Versand.png" style="width: 70%; margin-left: 15%;">
+    <h3 style="font-size: xx-large; text-decoration: none;">Versand</h3>
+        <form action="#" method="post">
+            <h3>Versandadresse</h3>
+            <div class="form-group">
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="plz">Postleitzahl:</label>
+                <input type="text" id="plz" name="plz">
+            </div>
+    
+            <div class="form-group">
+                <label for="ort">Ort:</label>
+                <input type="text" id="ort" name="ort">
+            </div>
+    
+            <div class="form-group">
+                <label for="land">Land:</label>
+                <input type="text" id="land" name="land">
+            </div>
+            <br> 
+            <input style="margin-left: 50px;" type="checkbox" id="identisch" name="identisch" required>
+            <label style="color: #8b735b; margin-left: 15px;" for="identisch">Die Rechnungsadresse ist identisch zur Versandadresse</label>
+            <form action="#" method="post">
+                <h3>Rechnungsadresse</h3>
+                <div class="form-group">
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" id="vorname" name="vorname" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="plz">Postleitzahl:</label>
+                    <input type="text" id="plz" name="plz">
+                </div>
+        
+                <div class="form-group">
+                    <label for="ort">Ort:</label>
+                    <input type="text" id="ort" name="ort">
+                </div>
+        
+                <div class="form-group">
+                    <label for="land">Land:</label>
+                    <input type="text" id="land" name="land">
+                </div>
+                <br>
+                <a href="Zahlungsart.html"><div class="weiterbottun"><input type="submit" value="Weiter"></div></a>
+            </div>
+            <footer>
     <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
 </footer>
 </div>
