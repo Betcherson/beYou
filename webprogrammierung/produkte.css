@@ -1,0 +1,36 @@
+/* Stil für den nichtfunktionalen Filter */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #90b3be;
+    padding: 10px;
+    margin-bottom: 90px;
+}
+.filter-title {
+    margin-left: 20px;
+    color: #8b735b;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.filter-dropdown {
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.filter-label {
+    color: #8b735b;
+    font-weight: bold;
+}
+
+.filter-select {
+    color: #8b735b;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+    background-color: #f5f3ea;
+}
