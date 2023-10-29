@@ -27,7 +27,9 @@
     src: url("./material-icons.woff2") format("woff2"), url("./material-icons.woff") format("woff");
     }
 
-
+*{
+    text-decoration: none;
+}
 
 /*Hintergrund des Headers*/
         header {
@@ -317,11 +319,21 @@
             font-size:medium;
             padding-top: 10px;
         }
-
-
-
-
-
+        .container h6{
+                color:#90b3be; /* Dunkelgrauer Text */
+                margin: 0;
+                padding-top: 30px;
+                margin-left: 25px;
+                font-size: 40px;
+                padding: 0;
+        }
+        a{
+            color: #8b735b;
+        }
+        a:hover{
+            color: #6f5c48;
+        }
+        
 
 
 
@@ -336,8 +348,13 @@
         }
 
         .container h2 {
+            vertical-align: middle;
             color: #8b735b; /* Bräunliche Schriftfarbe für Überschriften im Container */
             text-align: center; /* Überschriften zentrieren */
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
         }
 
         .container h4{
@@ -487,7 +504,7 @@
             grid-row: 100%;
             grid-column: auto auto;
             align-content: center;
-            width: fit-content;
+            width: 90%;
             overflow: hidden;
             background-color: #90b3be78; /* Helle Hintergrundfarbe für Produkte */
             justify-self: center;
