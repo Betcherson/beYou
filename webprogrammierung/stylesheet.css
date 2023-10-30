@@ -705,7 +705,7 @@ h5{
     }
     .containerproduct .produktname .auswahl{
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(3, 25%) 10%;
         grid-template-rows: 1fr 1.5fr;
         grid-column-gap: 5%;
         grid-row-gap: 10px;
@@ -728,7 +728,8 @@ h5{
             border-radius: 3px;
         }
         .containerproduct .produktname .auswahl .div5 { grid-area: 2 / 3 / 3 / 4; }
-
+        .containerproduct .produktname .auswahl .div6 {grid-area: 2 / 4 / 3 /5;
+        font-family: 'Material Icons';}
     .containerproduct .my-3 {
         font-weight: bold;
         margin-bottom: 5px;
