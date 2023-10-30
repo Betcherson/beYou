@@ -1,4 +1,10 @@
-.weiterbottun input[type="submit"] {
+.weiterbutton{
+    text-align: right;
+}
+.weiterbutton input[type="submit"] {
+    position:relative;
+    justify-self: right;
+    right: 30px;
     width: 150px;
     height: 35px;
     background-color: #90b3be;
@@ -10,7 +16,7 @@
     margin-bottom: 10px;
     font-size: 20px;
 }
-.weiterbottun input[type="submit"]:hover {
+.weiterbutton input[type="submit"]:hover {
 background-color: #79939b;
 }
 
@@ -62,3 +68,21 @@ height: 15px;
 width: 15px;
 border: 10px solid white;
 }
+
+.containerauswahl{
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(4 20%);
+    width: 40%;
+    height: 50vh;
+    margin-bottom: 10px;
+}
+.containerauswahl .auswahl{
+    width: 100%;
+}
+.containerauswahl .auswahl label{
+    margin: 0;
+    width: 100%;
+}
+
