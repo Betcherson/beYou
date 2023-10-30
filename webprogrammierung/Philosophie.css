@@ -24,6 +24,13 @@ i{
     hyphens: auto;
 }
 
+b{
+    color: #90b3be;
+}
+li b{
+    color: #90b3be;
+}
+
 .table-container table{
     width: 80%;
     border-collapse: collapse;

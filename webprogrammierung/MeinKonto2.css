@@ -92,6 +92,7 @@ align-items: flex-end;
 }
 .accountlayout .sidebar ul li b {
     font-style: normal;
+    padding-left: 5px;
 }
 .accountlayout .sidebar ul li a material-icons{
     width: 25px;
