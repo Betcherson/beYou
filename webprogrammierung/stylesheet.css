@@ -562,6 +562,19 @@
         footer p {
             margin: 0;
         }
+        
+.footer-content {
+    display: grid;
+    grid: auto/ 26% 26% 48%;
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
         .cookie-popup {
             display: none;
             position: fixed;
@@ -851,3 +864,22 @@ h5 span li{
     margin-left: 20px;
     list-style:circle;
  }
+
+ .footer-section h2{
+    color: #f5f3ea;
+    padding-top: 0px;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+.footer-section img {
+    height: 35px; /* Jedes Icon ist 45px hoch */
+    margin-right: 10px; /* Abstand zwischen den Icons */
+}
+
+.footer-section a{
+    color: #f5f3ea;
+}
+.footer-bottom a{
+    color: #f5f3ea;
+}
