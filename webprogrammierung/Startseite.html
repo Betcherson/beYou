@@ -17,14 +17,13 @@
     </div>
 
     <script>
-        // Funktion zum Ausblenden des Cookie-Hinweis-Pop-ups und Speichern des Cookie-Zustands
+        
         function acceptCookies() {
             document.getElementById("cookiePopup").style.display = "none";
-            // Hier könnten Sie Code zum Speichern des Cookie-Zustands hinzufügen
+          
         }
 
-        // Prüfen, ob der Cookie-Hinweis bereits akzeptiert wurde (hier vereinfacht)
-        // Sie sollten hier den tatsächlichen Cookie-Status überprüfen
+        
         if (!document.cookie.includes("acceptedCookies=true")) {
             document.getElementById("cookiePopup").style.display = "block";
         }
