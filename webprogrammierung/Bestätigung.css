@@ -1,5 +1,5 @@
 .weiterbottun input[type="submit"] {
-    margin-left: 44%;
+    margin-left: 43%;
     width: 200px;
     height: 35px;
     background-color: #90b3be;
@@ -103,17 +103,7 @@ background-color: #79939b;
     text-decoration-style: double;
     text-decoration-line: underline double;
 }   
-.kaufbottun input[type="submit"] {
-    width: 85px;
-    background-color: #90b3be;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;    
-}
-.kaufbottun input[type="submit"]:hover {
-background-color: #79939b;
-}
+
 .summetotal table th{
     padding-right: 5px;
     
