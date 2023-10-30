@@ -1,0 +1,33 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+        h1 {
+            color: #8b735b;
+        }
+
+        h2 {
+            color: #f5f3ea;
+        }
+
+        p{
+            color: #f5f3ea; 
+        }
+        a{
+        color: #f5f3ea; 
+        }
+
+        .faq-container {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #79939b;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
