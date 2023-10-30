@@ -13,9 +13,8 @@
             var popup = document.getElementById(popupId);
             if (popup) {
                 popup.style.display = "block";
-
                 var overlay = popup.querySelector(".popup-overlay");
-        overlay.addEventListener("click", function (event) {
+                overlay.addEventListener("click", function (event) {
             if (event.target === overlay) {
                 hidePopup(popupId);
             }
@@ -26,7 +25,6 @@
         function hidePopup(popupId) {
     var popup = document.getElementById(popupId);
     if (popup) {
-        popup.style.display = "none";
                 popup.style.display = "none";
                 var overlay = popup.querySelector(".popup-overlay");
                 overlay.removeEventListener("click", null);
@@ -201,7 +199,7 @@
                         <td>Richtlinien für Naturtextilien. Die gesamte textile Produktionskette wird, in ökologischer 
                             und sozialverantwortlicher Hinsicht, abgebildet. Bewusst wird hierbei eine eingeschränkte Palette an Qualitäten und Produkten in Kauf genommen.
                             Derzeit der Standard mit den höchsten Ansprüchen an textile Ökologie und zeigt das im Augenblick maximale, realisierbare Niveau auf. </td>
-                        <td><i class="material-icons" onclick="showPopup('popup1')">
+                        <td><i class="material-icons">
                             visibility
                         </i></td>
                     </tr>
@@ -214,7 +212,7 @@
                             Diese gewährleisten Aspekte wie betrieblicher Umweltschutz sowie soziale Verantwortung im 
                             Produktionsprozess, welche von Oeko-Tex überprüft und gefördert werden.
                             Das Textilsiegel ist am weitesten verbreitet, da die Standards recht niedrig sind.</td>
-                        <td><i class="material-icons" onclick="showPopup('popup1')">
+                        <td><i class="material-icons">
                             visibility
                         </i></td>
                     </tr>
