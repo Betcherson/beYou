@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
+    background-color: #f5f3ea; 
     align-content: center;
     font-family: Arial, sans-serif;
 }
@@ -68,26 +68,25 @@ li {
 }
 
 .green-bullet::before {
-    content: "\2022"; /* Unicode für einen Bulletpoint */
+    content: "\2022"; 
     color: #bfdcae;
-    font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
-    line-height: 10px; /* Zentriert den Bulletpoint vertikal */
-    margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
+    font-size: 100px; 
+    margin-right: 5px; 
 }
 
 .yellow-bullet::before {
-    content: "\2022"; /* Unicode für einen Bulletpoint */
+    content: "\2022"; 
     color: #d7cda4;
-    font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
-    line-height: 10px; /* Zentriert den Bulletpoint vertikal */
-    margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
+    font-size: 100px; 
+    line-height: 10px; 
+    margin-right: 5px; 
 }
 .red-bullet::before {
-    content: "\2022"; /* Unicode für einen Bulletpoint */
+    content: "\2022";
     color: #ce8e8b;
-    font-size: 100px; /* Durchmesser von 10px (entspricht etwa 0,5 cm) */
-    line-height: 10px; /* Zentriert den Bulletpoint vertikal */
-    margin-right: 5px; /* Abstand zwischen Bulletpoint und Text */
+    font-size: 100px; 
+    line-height: 10px; 
+    margin-right: 5px; 
 }
 
 .table a{
