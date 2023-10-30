@@ -133,8 +133,15 @@
 
 .newscontent .card img {
     width: 100%;
-    height: auto;
+
     transition: transform 0.3s, filter 0.3s;
+    object-fit: cover;
+}
+
+.newscontent .card .cardimg{
+    width: 100%;
+    
+    object-fit: cover;
 }
 
 .newscontent .card:hover img {
