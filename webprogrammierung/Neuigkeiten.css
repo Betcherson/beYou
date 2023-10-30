@@ -9,12 +9,14 @@
 .video-container{
     flex:1;
     width:100%;
+    position: relative;
 }
 
 .video-container video {
     width:100%;
     height:45vh;
     object-fit:cover;
+
 }
 
 .centered-content{
@@ -27,6 +29,22 @@
     color: #fff; /* Textfarbe anpassen */   
 }
 
+.newsheader {
+   
+    
+    left: 15%;
+    width: 70%;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+    background-color:rgba(255, 255, 255, 0.7);
+
+}
 .newsheader h1 {
     font-size: 45px;
     margin-bottom: auto;
@@ -88,6 +106,14 @@
     height: auto;
     transition: transform 0.3s, filter 0.3s;
 }
+
+.newscontent .card .cardimg{
+    width: 468px;
+    height: 230px;
+    object-fit: cover;
+    overflow:hidden;
+}
+
 
 .newscontent .card:hover img{
     /*transform: scale(1.1);*/

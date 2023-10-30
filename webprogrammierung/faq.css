@@ -4,11 +4,17 @@
             text-align: left;
         }
 
-        h1 {
+        .faq-container h1 {
+            margin-top: 5px;
             color: #8b735b;
         }
 
         h2 {
+            color: #f5f3ea;
+        }
+        .faq-container h2 {
+            font-size: large;
+            text-align: left;
             color: #f5f3ea;
         }
 
@@ -21,13 +27,14 @@
 
         .faq-container {
             max-width: 70%;
-            margin: 0 auto;
+            margin: 0;
+            height: fit-content;
         }
 
         .faq-item {
             background-color: #79939b;
             margin: 10px 0;
-            padding: 10px;
+            padding: 10px 30px;
             border-radius: 10px;
         }
     
