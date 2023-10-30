@@ -186,11 +186,17 @@ ul{
     
 }
 .footer-section img {
-    width: 100px; /* Jedes Icon ist 75px breit */
-    height: 60px; /* Jedes Icon ist 45px hoch */
+    width: 75px; /* Jedes Icon ist 75px breit */
+    height: 45px; /* Jedes Icon ist 45px hoch */
     margin-right: 10px; /* Abstand zwischen den Icons */
 }
 
+.footer-section a{
+    color: #f5f3ea;
+}
+.footer-bottom a{
+    color: #f5f3ea;
+}
 
 
 
