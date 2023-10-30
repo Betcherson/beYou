@@ -2,6 +2,10 @@
     color: red;
 }
 
+.kontakt{
+    margin: 10px;
+    margin-left: 25px;
+}
 .form-group {
     display:table-row;
     align-items: center;
@@ -69,8 +73,15 @@ h2{
     .text h2{
         text-align: left;
     }
-
+    .text p{
+        margin: 0;
+    }
+    .button{
+        text-align: right;
+        padding-right: 50px;
+    }
     .button input[type="submit"] {
+        text-align: right;
         width: 85px;
         background-color: #90b3be;
         color: #fff;
