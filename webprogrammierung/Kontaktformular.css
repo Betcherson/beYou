@@ -45,6 +45,11 @@
 h1{
     color: #8b735b;
 }
+
+p{
+    color: #8b735b;
+}
+
 h2{
     display: inline-block;
     width: 30vw;
@@ -61,6 +66,7 @@ h2{
             margin-right: 15px;
             display: block;
             max-width: 97%;
+            margin-top: 105px;
     }
     .button input[type="submit"] {
         width: 85px;

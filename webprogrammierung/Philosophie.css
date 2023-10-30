@@ -168,7 +168,8 @@ table.table-hover td{
 
 .footer-content {
     display: grid;
-    grid: auto/ 26% 26% 26%;
+    grid: auto/ 26% 26% 48%;
+    font-size: 14px;
 }
 
 ul{
@@ -186,8 +187,7 @@ ul{
     
 }
 .footer-section img {
-    width: 75px; /* Jedes Icon ist 75px breit */
-    height: 45px; /* Jedes Icon ist 45px hoch */
+    height: 35px; /* Jedes Icon ist 45px hoch */
     margin-right: 10px; /* Abstand zwischen den Icons */
 }
 
