@@ -60,14 +60,16 @@ h2{
     color: #8b735b;
     }
 
-    body{
-        
-            margin-left: 15px;
-            margin-right: 15px;
-            display: block;
+    .text{
+        display: flexbox;
+        text-align: left;
+            margin-right: 15px;;
             max-width: 97%;
-            margin-top: 105px;
     }
+    .text h2{
+        text-align: left;
+    }
+
     .button input[type="submit"] {
         width: 85px;
         background-color: #90b3be;
