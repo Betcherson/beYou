@@ -15,7 +15,7 @@
                 popup.style.display = "block";
                 var overlay = popup.querySelector(".popup-overlay");
                 overlay.addEventListener("click", function (event) {
-            if (event.target === overlay) {
+            if (event.target =! overlay) {
                 hidePopup(popupId);
             }
         });
