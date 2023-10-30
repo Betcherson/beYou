@@ -31,7 +31,7 @@
     text-decoration: underline; 
     font-size: larger;  
 }
-.weiterbottun input[type="submit"] {
+.weiterbutton input[type="submit"] {
     margin-top: 20px;
     width: 150px;
     height: 35px;
@@ -44,7 +44,7 @@
     margin-bottom: 10px;
     font-size: 20px;
 }
-.weiterbottun input[type="submit"]:hover {
+.weiterbutton input[type="submit"]:hover {
 background-color: #79939b;
 }
 
