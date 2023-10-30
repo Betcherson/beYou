@@ -53,16 +53,16 @@ td img{
     text-decoration-style: double;
     text-decoration-line: underline double;
 }
-.heart i {
+.shoppingcard i {
     font-size: 40px;
     margin-right: 10px; 
     color: #90b3be;
     cursor: pointer;
     text-decoration: none;
 }
-.heart i:hover{
+.shoppingcard i:hover{
     color: #79939b;
 }
-.heart a{
+.shoppingcard a{
     font-size: 0px;
 }
