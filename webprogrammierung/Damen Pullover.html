@@ -12,6 +12,16 @@
                 const mainImage = document.getElementById("mainImage");
                 mainImage.src = imageSource;
             }
+            
+            function toggleFavorite(heart) {
+                if (heart.classList.contains('empty')) {
+                    heart.classList.remove('empty');
+                    heart.textContent = 'favorite';
+                } else {
+                    heart.classList.add('empty');
+                    heart.textContent = 'favorite_border';
+                }
+            }
         </script>
     </head>
 
@@ -176,6 +186,9 @@
                     <input class="div4" type ="number" value="1">
                     <div class="div5">
                         <button class="buy-button">In den Warenkorb</button>
+                    </div>
+                    <div class="div6">
+                        <i class="material-icons favorite empty" onclick="toggleFavorite(this)">favorite_border</i>
                     </div>
                 </div>
                 </div>
