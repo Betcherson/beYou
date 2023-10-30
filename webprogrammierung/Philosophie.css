@@ -111,7 +111,7 @@ text-decoration: none;
 .popup-content {
     position:relative;
     top:20vh;
-    background-color: #fff;
+    background-color: rgba(251, 250, 246, 0.9);
     max-width: 80%;
     max-height: 80%;
     margin: 20px auto;
@@ -131,26 +131,72 @@ text-decoration: none;
     cursor: pointer;
 }
 
+.popup h1 {
+    font-size: 30px;
+    color: #8b735b;
+}
 .popup h2 {
-    font-size: 24px;
+    font-size: 26px;
+    color: #8b735b;
 }
 
 .popup p {
     font-size: 16px;
+    color: #8b735b;
 }
 
 table.table-hover tr:hover {
     background-color: rgba(200, 200, 200, 0.5);
 }
+
 table.table-hover {
     width: 97%;
     color: #8b735b;
     border-spacing: 0cm;
     margin-left: 15px; 
 }
+
 table.table-hover th{
     padding-left: 5px;
 }
+
 table.table-hover td{
     padding: 5px;
 }
+
+
+
+.footer-content {
+    display: grid;
+    grid: auto/ 26% 26% 26%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.footer-section h2{
+    color: #f5f3ea;
+    padding-top: 0px;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+.footer-section img {
+    width: 75px; /* Jedes Icon ist 75px breit */
+    height: 45px; /* Jedes Icon ist 45px hoch */
+    margin-right: 10px; /* Abstand zwischen den Icons */
+}
+
+.footer-section a{
+    color: #f5f3ea;
+}
+.footer-bottom a{
+    color: #f5f3ea;
+}
+
+
+

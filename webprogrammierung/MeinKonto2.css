@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height:100%;
+    width:100%;
+    /*background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(b-v/login/banner.jpg);*/
+    background-color: #f5f3ea;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.centered-content{
+    margin-top: 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.centered-content img {
+    width: 200px;
+    height: auto;  
+}
+
+.centered-content h1 {
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top:20px;
+}
+
+.layout {
+    width: 65%;
+    height: 700px;
+    position: relative;
+    display:flex;
+    margin: 2% auto; 
+    
+}
+
+.layout .sidebar {
+    position: absolute;
+    width: 400px;
+    height: 610px;
+    background: #90b3be;
+    padding: 30px 0;
+}
+
+.layout .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.layout .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0,0.5);
+    border-top: 1px solid rgba(225,225,225,225,0.5);
+    align-self: center;
+    padding-right: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.layout .sidebar ul li a {
+    color: white;
+    display: block;
+
+}
+
+.layout .sidebar ul li a material-icons{
+    width: 25px;
+}
+
+
+.layout .sidebar ul li:hover {
+    background: #e8e8e8;
+}
+
+.layout .sidebar ul li:hover a {
+    color: #8b735b;
+}
+
+.layout .main_content {
+    width: 100%;
+    margin-left:500px;
+}
+
+.layout .main_content  .header {
+    padding: 20px;
+    background: #f5f3ea;
+    color: 8b735b;
+    border-bottom: 1px solid #90b3be;
+}
+
+.layout .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+  }
+  
+  .layout .main_content .info div{
+    margin-bottom: 20px;
+  }

@@ -15,12 +15,14 @@
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: left;
+    color: #8b735b;
 }
 
 .form-group input  {
     margin-left: 10px;
     width: 60vw;
     padding: 5px;
+    color: #8b735b;
 }
 
 /* .form-group input[type="email"]  {
@@ -33,9 +35,13 @@
     margin-left: 10px;
     width: 60vw;
     padding: 5px;
+    color: #8b735b;
 }
 /*        .form-group input[type="tel"]  {
     margin-left: 100px;
     width: 800px;
     padding: 5px;
 } */
+h1{
+    color: #8b735b;
+}

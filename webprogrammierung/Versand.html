@@ -102,70 +102,97 @@
                 <label for="vorname">Vorname:</label>
                 <input type="text" id="vorname" name="vorname" required>
             </div>
-    
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
-
-            <div class="form-group">
-                <label for="straße">Straße:</label>
-                <input type="text" id="straße" name="straße">
-            </div>
-    
             <div class="form-group">
                 <label for="plz">Postleitzahl:</label>
                 <input type="text" id="plz" name="plz">
             </div>
-    
             <div class="form-group">
                 <label for="ort">Ort:</label>
-                <input type="text" id="ort" name="ort">
+                <input type="text" id="ort" name "ort">
             </div>
-    
+            <div class="form-group">
+                <label for="straße">Straße, Hausnr.:</label>
+                <input type="text" id="straße" name "straße">
+            </div>
             <div class="form-group">
                 <label for="land">Land:</label>
                 <input type="text" id="land" name="land">
             </div>
             <br> 
-            <input style="margin-left: 50px;" type="checkbox" id="identisch" name="identisch" required>
+            <input style="margin-left: 50px;" type="checkbox" id="identisch" name="identisch">
             <label style="color: #8b735b; margin-left: 15px;" for="identisch">Die Rechnungsadresse ist identisch zur Versandadresse</label>
-            <form action="#" method="post">
-                <h3>Rechnungsadresse</h3>
-                <div class="form-group">
-                    <label for="vorname">Vorname:</label>
-                    <input type="text" id="vorname" name="vorname" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="straße">Straße:</label>
-                    <input type="text" id="straße" name="straße">
-                </div>
-        
-                <div class="form-group">
-                    <label for="plz">Postleitzahl:</label>
-                    <input type="text" id="plz" name="plz">
-                </div>
-        
-                <div class="form-group">
-                    <label for="ort">Ort:</label>
-                    <input type="text" id="ort" name="ort">
-                </div>
-        
-                <div class="form-group">
-                    <label for="land">Land:</label>
-                    <input type="text" id="land" name="land">
-                </div>
-                <br>
-                <a href="Zahlungsart.html"><div class="weiterbottun"><input type="submit" value="Weiter"></div></a>
+            <div id="billingAddressHeader">
+            <h3>Rechnungsadresse</h3></div>
+            
+            <div class="form-group billing-address-field">
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname">
             </div>
-            <footer>
-    <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
-</footer>
-</div>
-</div>
+            <div class="form-group billing-address-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group billing-address-field">
+                <label for="plz">Postleitzahl:</label>
+                <input type="text" id="plz" name="plz">
+            </div>
+            <div class="form-group billing-address-field">
+                <label for="ort">Ort:</label>
+                <input type="text" id="ort" name="ort">
+            </div>
+            <div class="form-group billing-address-field">
+                <label for="straße">Straße, Hausnr.:</label>
+                <input type="text" id="straße" name "straße">
+            </div>
+            <div class="form-group billing-address-field">
+                <label for="land">Land:</label>
+                <input type="text" id="land" name="land">
+            </div>
+            <br>
+            
+        </form>
+        <a href="Zahlungsart.html">
+            <div class="weiterbottun"><input type="submit" value="Weiter"></div>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
+    </footer>
+    
+    <!-- JavaScript-Code hier einfügen -->
+    <script>
+        // Funktion, um den Status der Checkbox zu überprüfen
+        function updateBillingAddress() {
+            var checkbox = document.getElementById("identisch");
+            var billingAddressFields = document.querySelectorAll(".billing-address-field");
+            var billingAddressHeader = document.getElementById("billingAddressHeader");
+
+            // Überprüfe, ob die Checkbox aktiviert ist
+            if (checkbox.checked) {
+                // Verberge die Rechnungsadresse-Felder und mache sie nicht verpflichtend
+                for (var i = 0; i < billingAddressFields.length; i++) {
+                    billingAddressFields[i].style.display = "none";
+                    billingAddressFields[i].removeAttribute("required");
+                }
+                billingAddressHeader.style.display = "none";
+            } else {
+                // Zeige die Rechnungsadresse-Felder und mache sie verpflichtend
+                for (var i = 0; i < billingAddressFields.length; i++) {
+                    billingAddressFields[i].style.display = "block";
+                    billingAddressFields[i].setAttribute("required", "required");
+                }
+                billingAddressHeader.style.display = "block";
+
+            }
+        }
+
+        // Führe die Funktion beim Laden der Seite und beim Ändern des Checkbox-Status aus
+        window.onload = updateBillingAddress;
+        document.getElementById("identisch").addEventListener("change", updateBillingAddress);
+    </script>
+</body>
+</html>
