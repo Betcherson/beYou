@@ -45,3 +45,40 @@
 h1{
     color: #8b735b;
 }
+
+p{
+    color: #8b735b;
+}
+
+h2{
+    display: inline-block;
+    width: 30vw;
+    min-width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #8b735b;
+    }
+
+    body{
+        
+            margin-left: 15px;
+            margin-right: 15px;
+            display: block;
+            max-width: 97%;
+            margin-top: 105px;
+    }
+    .button input[type="submit"] {
+        width: 85px;
+        background-color: #90b3be;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;    
+        font-size: 16px;
+        height: 30px;
+    }
+
+    .button input[type="submit"]:hover {
+        background-color: #79939b;
+        }

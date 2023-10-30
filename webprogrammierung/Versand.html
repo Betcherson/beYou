@@ -96,31 +96,35 @@
 <br>
 <img src="b-v\Bestellung\Versand.png" style="width: 70%; margin-left: 15%;">
     <h3 style="font-size: xx-large; text-decoration: none;">Versand</h3>
-        <form action="#" method="post">
+        <form id="shippingform" action="Zahlungsart.html">
             <h3>Versandadresse</h3>
             <div class="form-group">
                 <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" required>
+                <input type="text" id="vorname" name="vorname" value="Julia" required>
             </div>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" value="Schuhmacher" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" value="julia.schuhmacher@recht.de" required>
             </div>
             <div class="form-group">
                 <label for="plz">Postleitzahl:</label>
-                <input type="text" id="plz" name="plz">
+                <input type="text" id="plz" name="plz" value="60306" required>
             </div>
             <div class="form-group">
                 <label for="ort">Ort:</label>
-                <input type="text" id="ort" name "ort">
+                <input type="text" id="ort" name="ort" value="Frankfurt am Main" required>
             </div>
             <div class="form-group">
                 <label for="straße">Straße, Hausnr.:</label>
-                <input type="text" id="straße" name "straße">
+                <input type="text" id="straße" name="straße" value="Schuhmacherstr. 5" required>
             </div>
             <div class="form-group">
                 <label for="land">Land:</label>
-                <input type="text" id="land" name="land">
+                <input type="text" id="land" name="land" value="Deutschland" required>
             </div>
             <br> 
             <input style="margin-left: 50px;" type="checkbox" id="identisch" name="identisch">
@@ -130,69 +134,70 @@
             
             <div class="form-group billing-address-field">
                 <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname">
+                <input type="text" id="vorname" name="vorname" required>
             </div>
             <div class="form-group billing-address-field">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group billing-address-field">
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group billing-address-field">
                 <label for="plz">Postleitzahl:</label>
-                <input type="text" id="plz" name="plz">
+                <input type="text" id="plz" name="plz" required>
             </div>
-            <div class="form-group billing-address-field">
+
+            <div class="form-group billing-address-field" >
                 <label for="ort">Ort:</label>
-                <input type="text" id="ort" name="ort">
+                <input type="text" id="ort" name="ort" required>
             </div>
-            <div class="form-group billing-address-field">
+            <div class="form-group billing-address-field" >
                 <label for="straße">Straße, Hausnr.:</label>
-                <input type="text" id="straße" name "straße">
+                <input type="text" id="straße" name="straße" required>
             </div>
-            <div class="form-group billing-address-field">
+            <div class="form-group billing-address-field" >
                 <label for="land">Land:</label>
-                <input type="text" id="land" name="land">
+                <input type="text" id="land" name="land" required>
             </div>
             <br>
-            
+            <div class="weiterbutton"><input type="submit" value="Weiter" id="submitButton"></div>
         </form>
-        <a href="Zahlungsart.html">
-            <div class="weiterbottun"><input type="submit" value="Weiter"></div>
-        </a>
+        
     </div>
     <footer>
         <p>&copy; 2023 beYou - Alle Rechte vorbehalten</p>
     </footer>
     
-    <!-- JavaScript-Code hier einfügen -->
     <script>
         // Funktion, um den Status der Checkbox zu überprüfen
         function updateBillingAddress() {
-            var checkbox = document.getElementById("identisch");
-            var billingAddressFields = document.querySelectorAll(".billing-address-field");
-            var billingAddressHeader = document.getElementById("billingAddressHeader");
+        var checkbox = document.getElementById("identisch");
+        var billingAddressFields = document.querySelectorAll(".billing-address-field");
+        var billingAddressHeader = document.getElementById("billingAddressHeader");
 
-            // Überprüfe, ob die Checkbox aktiviert ist
-            if (checkbox.checked) {
-                // Verberge die Rechnungsadresse-Felder und mache sie nicht verpflichtend
-                for (var i = 0; i < billingAddressFields.length; i++) {
-                    billingAddressFields[i].style.display = "none";
-                    billingAddressFields[i].removeAttribute("required");
-                }
-                billingAddressHeader.style.display = "none";
-            } else {
-                // Zeige die Rechnungsadresse-Felder und mache sie verpflichtend
-                for (var i = 0; i < billingAddressFields.length; i++) {
-                    billingAddressFields[i].style.display = "block";
-                    billingAddressFields[i].setAttribute("required", "required");
-                }
-                billingAddressHeader.style.display = "block";
-
+        // Überprüfe, ob die Checkbox aktiviert ist
+        if (checkbox.checked) {
+            // Verberge die Rechnungsadresse-Felder und mache sie nicht verpflichtend
+            for (var i = 0; i < billingAddressFields.length; i++) {
+                billingAddressFields[i].style.display = "none";
+                billingAddressFields[i].querySelector("input").removeAttribute("required");
             }
+            billingAddressHeader.style.display = "none";
+        } else {
+            // Zeige die Rechnungsadresse-Felder und mache sie verpflichtend
+            for (var i = 0; i < billingAddressFields.length; i++) {
+                billingAddressFields[i].style.display = "block";
+                billingAddressFields[i].querySelector("input").setAttribute("required", "required");
+            }
+            billingAddressHeader.style.display = "block";
         }
+    }
 
-        // Führe die Funktion beim Laden der Seite und beim Ändern des Checkbox-Status aus
-        window.onload = updateBillingAddress;
-        document.getElementById("identisch").addEventListener("change", updateBillingAddress);
+    // Führe die Funktion beim Laden der Seite und beim Ändern des Checkbox-Status aus
+    window.onload = updateBillingAddress;
+    document.getElementById("identisch").addEventListener("change", updateBillingAddress);
     </script>
 </body>
 </html>

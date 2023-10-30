@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Benutzerprofil</title>
+    <link rel="stylesheet" href="MeinKonto2.css">
+    <link rel="stylesheet" href="iconfont\material-icons.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="hero">
+            <div class="centered-content">
+                <div class="flex-container">
+                    <a href="Startseite.html"><img src="b-v/40918284zentriert2.png"></a>
+                    <h1>MEIN KONTO</h1>
+                </div>
+            </div>
+
+            <div class="layout">
+                <div class="sidebar">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="MeinKonto2.html"><i class="material-icons">person</i>Kontoübersicht</a></li>
+                        <li><a href="MeinKontoPersönlicheDaten.html"><i class="material-icons">badge</i>Persönliche
+                                Daten</a></li>
+                        <li><a href="#"><i class="material-icons">shopping_cart</i>Bestellungen</a></li>
+                        <li><a href="#"><i class="material-icons">remove_shopping_cart</i>Retouren</a></li>
+                        <li><a href="#"><i class="material-icons">home</i>Adressen</a></li>
+                        <li><a href="#"><i class="material-icons">credit_card</i>Zahlungsmethoden</a></li>
+                        <li><a href="#"><i class="material-icons">support_agent</i>Kundenservice</a></li>
+                        <li><a href="#"><i class="material-icons">info</i>Info</a></li>
+                        <li><a href="#"><i class="material-icons">sms</i>Rezenssionen</a></li>
+                    </ul>
+                </div>
+                <div class="main_content">
+                    <div class="header">Persönliche Daten</div>
+                    <div class="persondata">
+                        
+                        <form method="GET">
+                            <table cellpadding="8px">
+                                <tr>
+                                    <td>Vorname:</td>
+                                    <td><input type="text" name="fname" autofocus="autofocus" required="required" value="Julia"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Zweitname:</td>
+                                    <td><input type="text" name="mname"></td>
+                                </tr>
+                                <tr>
+                                    <td>Nachname:</td>
+                                    <td><input type="text" name="lname" value="Schuhmacher"></td>
+                                </tr>
+                                <tr>
+                                    <td>Geburtsdatum:</td>
+                                    <td><input type="date" name="date" value="1993-01-01"></td>
+                                </tr>
+                                <tr>
+                                    <td>Bevorzugtes Geschlecht:</td>
+                                    <td>
+                                        <label><input type="radio" name="gender" value="Herren"> Herren</label>
+                                        <label><input type="radio" name="gender" value="Damen"> Damen</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bevorzugte Kleidungsgröße</td>
+                                    <td>
+                                        <select name="kleidungsgröße">
+                                            <option value="XS">XS</option>
+                                            <option value="XS">S</option>
+                                            <option value="XS">M</option>
+                                            <option value="XS">L</option>
+
+                                        </select>
+                                    </td>
+                                   
+                                </tr>
+                              
+                                
+                                <tr>
+                                    <td>Telefonnummer:</td>
+                                    <td><input type="text" name="phone" placeholder="10 digit number " value="+4912345678"></td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail Adresse:</td>
+                                    <td><input type="Email" name="email" placeholder="abc@gmail.com" value="julia.schuhmacher@gmail.com"></td>
+                                </tr>
+                              
+                            </table><br>
+                            <button class="saveButton" type="submit" name="submit" Value="Änderungen speichern"></button>
+                            
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
