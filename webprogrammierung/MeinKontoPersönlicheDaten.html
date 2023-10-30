@@ -42,7 +42,7 @@
                     <div class="header">Persönliche Daten</div>
                     <div class="persondata">
                         
-                        <form method="GET">
+                        <form class="tabelle" method="GET">
                             <table cellpadding="8px">
                                 <tr>
                                     <td>Vorname:</td>
@@ -65,7 +65,7 @@
                                     <td>Bevorzugtes Geschlecht:</td>
                                     <td>
                                         <label><input type="radio" name="gender" value="Herren"> Herren</label>
-                                        <label><input type="radio" name="gender" value="Damen"> Damen</label>
+                                        <label><input type="radio" name="gender" value="Damen" checked> Damen</label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -73,9 +73,9 @@
                                     <td>
                                         <select name="kleidungsgröße">
                                             <option value="XS">XS</option>
-                                            <option value="XS">S</option>
-                                            <option value="XS">M</option>
-                                            <option value="XS">L</option>
+                                            <option value="S" selected>S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
 
                                         </select>
                                     </td>
@@ -93,7 +93,7 @@
                                 </tr>
                               
                             </table><br>
-                            <button class="saveButton" type="submit" name="submit" Value="Änderungen speichern"></button>
+                            <button class="saveButton" type="submit" name="submit" Value="Änderungen speichern">Änderungen speichern</button>
                             
                         </form>
 
