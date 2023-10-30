@@ -127,7 +127,7 @@ display: flex;
 
 .newscontent .card .text{
     width: 250px;
-    height: 1200px;
+    height: fit-content;
     object-fit: cover;
     overflow:hidden;
 }

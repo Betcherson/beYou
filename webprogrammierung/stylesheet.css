@@ -876,6 +876,10 @@ h5 span li{
     height: 35px; /* Jedes Icon ist 45px hoch */
     margin-right: 10px; /* Abstand zwischen den Icons */
 }
+.footer-section .footericons{
+    display: flex;
+    padding-left: 40px;
+}
 
 .footer-section a{
     color: #f5f3ea;
