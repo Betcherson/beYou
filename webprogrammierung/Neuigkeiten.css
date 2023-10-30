@@ -102,8 +102,8 @@
 }
 
 .newscontent .card .cardimg{
-    width: 468px;
-    height: 230px;
+    width: 400px;
+    height: 210px;
     object-fit: cover;
     overflow:hidden;
 }
