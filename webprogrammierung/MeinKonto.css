@@ -1,29 +1,25 @@
-* {
+.hero {
     margin:0;
     padding:0;
     font-family: sans-serif;
-}
-
-.hero {
     height:100%;
     width:100%;
     /*background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(b-v/login/banner.jpg);*/
     background-color: #f5f3ea;
     background-position: center;
     background-size: cover;
-    position:absolute;
 }
 .centered-content{
+    height: fit-content;
     align-items: center;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .centered-content img {
     width: 200px;
     height: auto;
     align-items: center;
-   
 }
 
 .from-box {

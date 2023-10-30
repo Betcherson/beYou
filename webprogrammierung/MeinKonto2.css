@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-body {
-    background-color: #f5f3ea; /* Beigeton mit weniger Gelb */
-    font-family: Arial, sans-serif;
+.hero {
     margin: 0;
     padding: 0;
-}
-
-.hero {
-    height:100%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    height:fit-content;
     width:100%;
     /*background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(b-v/login/banner.jpg);*/
     background-color: #f5f3ea;
@@ -43,35 +33,42 @@ body {
 
 .centered-content h1 {
     font-size: 30px;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top:20px;
 }
 
 .accountlayout {
     width: 65%;
-    height: 700px;
+    height: 580px;
     position: relative;
     display:flex;
     margin: 2% auto; 
-    
+    overflow: hidden;
 }
 
 .accountlayout .sidebar {
     position: absolute;
     width: 400px;
-    height: 610px;
+    height: fit-content;
     background: #90b3be;
     padding: 30px 0;
 }
 
 .accountlayout .sidebar h2{
+    margin-top: 0;
+    font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
 }
+.accountlayout .sidebar ul {
+    padding: 0;
+}
 
 .accountlayout .sidebar ul li{
+    text-align: left;
+    width: 100%;
     padding: 15px;
     border-bottom: 1px solid rgba(0,0,0,0,0.5);
     border-top: 1px solid rgba(225,225,225,225,0.5);
@@ -81,11 +78,21 @@ body {
 }
 
 .accountlayout .sidebar ul li a {
+    padding-left: 10px;
+    display: flex;
     color: white;
-    display: block;
-
+align-items: flex-end;
 }
-
+.accountlayout .sidebar ul li i {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-size: 20px;
+    height: 100%;
+    bottom: 0;
+}
+.accountlayout .sidebar ul li b {
+    font-style: normal;
+}
 .accountlayout .sidebar ul li a material-icons{
     width: 25px;
 }
@@ -100,6 +107,7 @@ body {
 }
 
 .accountlayout .main_content {
+    height: fit-content;
     width: 100%;
     margin-left:500px;
 }

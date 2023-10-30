@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
-<html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login And Registration Form </title>
+    <link rel="stylesheet" href="iconfont\material-icons.css" />
     <link rel="stylesheet" href="MeinKonto.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body>
+<body style="height: max-content;">
     <div class="hero">
         <div class="centered-content">
             <a href="Startseite.html"><img src="b-v/40918284zentriert2.png"></a>
@@ -39,28 +41,10 @@
                 <input type="checkbox" class="check-box"><span>Ich stimme den <a href="AGBs.html">AGBs</a> zu</span>
                 <button type="submit" class="submit-btn" formaction="MeinKonto2.html">Registrieren</button>
             </form>
-
         </div>
-
     </div>
 
-    <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
 
-        function register() {
-            x.style.left = "-500px";
-            y.style.left = "110px";
-            z.style.left = "110px";
-        }
-
-        function login() {
-            x.style.left = "110px";
-            y.style.left = "550px";
-            z.style.left = "0";
-        }
-    </script>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -100,6 +84,23 @@
             <a href="AGBs.html">AGBs</a>
         </div>
     </footer>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-500px";
+            y.style.left = "110px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "110px";
+            y.style.left = "550px";
+            z.style.left = "0";
+        }
+    </script>
 </body>
 
 </html>
