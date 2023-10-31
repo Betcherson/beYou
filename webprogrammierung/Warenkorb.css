@@ -63,7 +63,6 @@
             text-decoration: underline;
             text-decoration-color: #90b3be;
             text-decoration-style: double;
-            text-decoration-line: underline double;
         }   
         .kaufbottun input[type="submit"] {
             width: 85px;
