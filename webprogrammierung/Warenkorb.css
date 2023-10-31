@@ -10,7 +10,7 @@
         .produktinfo{
             display: flex;
             flex-wrap: wrap;
-            color: #6f5c48;
+            color: #6f5c48; 
         } 
         th{
             width: 80%;
