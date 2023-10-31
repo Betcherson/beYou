@@ -60,7 +60,7 @@
             text-align: right;    
         }
         .doubleunderline{
-            text-decoration: underline  #90b3be double;
+            text-decoration: underline #90b3be double;
         }   
         .kaufbottun input[type="submit"] {
             width: 85px;
@@ -74,8 +74,7 @@
         background-color: #79939b;
         }
         .summetotal table th{
-            padding-right: 5px;
-            
+            padding-right: 5px;  
         }
         .summetotal table td{
             padding-right: 5px;
